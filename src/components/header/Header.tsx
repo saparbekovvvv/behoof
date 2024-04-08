@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from "../assets/path0.png"
+import logo from '../../assets/path0.png'
 import { NavLink } from 'react-router-dom';
 import { CiHeart } from "react-icons/ci";
 import { IoStatsChartOutline } from "react-icons/io5";

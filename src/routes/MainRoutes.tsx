@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import Main from "../components/main/Main";
+import Main from "./main/Main";
 
 const PUBLIC = [
   { path: "/", element: <Main />, key: 1 },

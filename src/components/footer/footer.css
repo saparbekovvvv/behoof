@@ -1,0 +1,97 @@
+#Footer {
+  background: rgb(242, 245, 249);
+  padding: 40px;
+}
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 140px;
+}
+.logo-footer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-footer a {
+  color: rgb(15, 17, 19);
+  font-family: Verdana;
+  font-size: 34.62px;
+  font-weight: 700;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.webs {
+  display: flex;
+  gap: 20px;
+  padding-top: 22px;
+}
+
+.socials span {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.socials a {
+  color: #333;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.socials a:hover {
+  color: #ff6600;
+}
+
+.user-info ul,
+.popular-categories ul,
+.behoof-team ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+}
+
+.user-info li,
+.popular-categories li,
+.behoof-team li {
+  color: rgb(38, 49, 65);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.user-info span,
+.popular-categories span,
+.behoof-team span {
+  color: rgb(161, 171, 185);
+  font-size: 16px;
+  font-weight: 400;
+}
+.foot {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.user-info,
+.popular-categories,
+.behoof-team {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.copyright {
+  padding-top: 20px;
+  border-top: 1px solid rgb(236, 238, 239);
+  color: rgb(126, 135, 148);
+  font-size: 16px;
+  font-weight: 400;
+}
+.copyright a {
+  color: rgb(126, 135, 148);
+}
