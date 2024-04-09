@@ -44,6 +44,7 @@
 
 .socials a:hover {
   color: #ff6600;
+  transform: scale(1.2);
 }
 
 .user-info ul,
@@ -89,9 +90,11 @@
   padding-top: 20px;
   border-top: 1px solid rgb(236, 238, 239);
   color: rgb(126, 135, 148);
-  font-size: 16px;
   font-weight: 400;
 }
-.copyright a {
+.copyright span,
+a {
+  font-size: 16px;
+
   color: rgb(126, 135, 148);
 }
