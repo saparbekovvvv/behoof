@@ -1,71 +1,71 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 .container {
-  max-width: 1240px;
-  width: 100%;
-  padding: 0 20px;
-  margin: 0 auto;
+    max-width: 1380px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
 }
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .header a {
-  text-decoration: none;
-  color: #111;
-  font-size: 34px;
-  font-weight: 700;
-  font-family: Verdana;
+    text-decoration: none;
+    color: #111;
+    font-size: 34px;
+    font-weight: 700;
+    font-family: Verdana;
 }
 .header-content {
-  display: flex;
-  align-items: center;
-  gap: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 .catalog {
-  display: flex;
-  align-items: center;
-  color: #fff;
+    display: flex;
+    align-items: center;
+    color: #fff;
 }
 .catalog button,
 input {
-  padding: 15px;
-  border: none;
+    padding: 15px;
+    border: none;
 }
 .catalog input {
-  width: 500px;
-  outline: none;
-  background: #f2f5f9;
-  border-end-end-radius: 10px;
-  border-start-end-radius: 10px;
+    width: 500px;
+    outline: none;
+    background: #f2f5f9;
+    border-end-end-radius: 10px;
+    border-start-end-radius: 10px;
 }
 .catalog button {
-  height: 45px;
-  border-bottom-left-radius: 10px;
-  border-top-left-radius: 10px;
-  background: #ff4d4d;
-  color: #fff;
+    height: 45px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    background: #ff4d4d;
+    color: #fff;
 }
 
 .nav {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
 }
 .nav a {
-  display: flex;
-  font-size: 20px;
-  padding: 10px;
-  border-radius: 10px;
+    display: flex;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
 
-  background: #f2f5f9;
+    background: #f2f5f9;
 }
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
