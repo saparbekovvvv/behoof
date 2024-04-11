@@ -327,15 +327,16 @@ h5 {
 .cardlist {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
+    gap: 20px;
 }
 .list {
     background: rgb(242, 245, 249);
+    width: 100%;
+
     list-style: none;
     border-radius: 10px;
     padding: 10px;
-    width: 100%;
-    height: 100%;
+    height: fit-content;
 }
 .avatar {
     display: flex;
