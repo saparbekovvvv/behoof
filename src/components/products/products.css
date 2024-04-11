@@ -1,0 +1,147 @@
+.Product {
+  background: rgb(253, 253, 253);
+  border-radius: 10px;
+  margin: 40px 0 0 0;
+}
+
+.products {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.title {
+  top: 0;
+  right: 0;
+  background: rgb(246, 247, 250);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.Product {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgb(242, 245, 249);
+  padding: 10px;
+  gap: 20px;
+}
+.Pretext {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 50px;
+}
+.badgr {
+  display: flex;
+  gap: 40px;
+}
+.Iphones {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin: 20px 0 20px 0;
+}
+.Chracters {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 10px;
+}
+.charakter {
+  list-style: none;
+  color: rgb(15, 17, 19);
+  font-size: 11px;
+  font-weight: 200;
+  line-height: 18px;
+}
+
+.otsenka {
+  background: rgb(246, 247, 250);
+  padding: 5px;
+  border-radius: 10px;
+  color: rgb(48, 209, 112);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.othv {
+  background: rgb(246, 247, 250);
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  background: #f7f7f7;
+}
+.Iphone {
+  color: rgb(15, 17, 19);
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.price {
+  color: rgb(48, 209, 112);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+span {
+  color: rgb(15, 17, 19);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+.icon {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.icons {
+  border: 1px solid gray;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 4px;
+}
+.border {
+  display: flex;
+  gap: 5px;
+}
+.bad {
+  border-radius: 2px;
+  background: rgb(255, 77, 77);
+  width: 44px;
+  height: 4px;
+}
+.frame {
+  margin: 5px 0 0;
+  font-size: 15px;
+  font-weight: 100;
+  color: rgb(126, 135, 148);
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.btn {
+  margin: 20px 0 0;
+  font-size: 15px;
+  padding: 10px;
+  width: 240px;
+  border: none;
+  color: #f7f7f7;
+  background: rgb(255, 77, 77);
+}
+
+.spans {
+  color: rgb(255, 77, 77);
+}
