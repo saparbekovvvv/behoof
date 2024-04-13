@@ -1,0 +1,120 @@
+#Differences {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.differences {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.differences h2 {
+  color: rgba(161, 171, 185, 1);
+  font-weight: 400;
+}
+.rt-1 {
+  font-size: 32px;
+  position: relative;
+  padding-top: 20px;
+}
+.rt-2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.rt-2 button,
+a {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: none;
+  background: none;
+  color: rgba(161, 171, 185, 1);
+}
+.diff {
+  border: 2px solid #e5e2e2;
+}
+.differences__content {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+}
+.differences__content button {
+  padding: 10px;
+  border: 2px solid #e5e2e2;
+  background: #fff;
+  color: rgba(126, 135, 148, 1);
+  border-radius: 10px;
+}
+
+.x {
+  width: 12px;
+}
+
+.Apple {
+  display: flex;
+}
+.Product {
+  max-width: 300px;
+  padding: 20px;
+  position: relative;
+  width: 100%;
+  border-right: 2px solid #e5e2e2;
+}
+.Apple img {
+  width: 120px;
+}
+
+.delete {
+  position: absolute;
+  right: 0;
+}
+
+.phone {
+  margin: 5px 0 0;
+  font-size: 10px;
+  color: rgba(126, 135, 148, 1);
+}
+.Apple {
+  font-size: 15px;
+  color: rgba(38, 49, 65, 1);
+}
+.sena {
+  margin: 5px 0 0;
+  width: 10px;
+  color: rgba(126, 135, 148, 1);
+}
+.prise {
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+.Price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Star {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+.Reiting {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Star span {
+  display: flex;
+  color: #e5e2e2;
+}
+.Star span:hover {
+  color: yellow;
+}
+.difference {
+  border-top: 2px solid #e5e2e2;
+  border-bottom: 2px solid #e5e2e2;
+}
+.Apple h1 {
+  font-size: 20px;
+}

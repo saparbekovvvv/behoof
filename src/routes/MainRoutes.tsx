@@ -1,8 +1,10 @@
 import { Route, Routes } from "react-router-dom";
 import Main from "./main/Main";
+import Differences from "../components/differences/Differences";
 
 const PUBLIC = [
   { path: "/", element: <Main />, key: 1 },
+  { path: "/differences", element: <Differences />, key: 2 },
 ];
 const MainRoutes = () => {
   return (
