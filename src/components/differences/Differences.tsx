@@ -5,6 +5,10 @@ import jieg from "../../assets/1.jpeg";
 import "../differences/differences.css";
 import { IoMdStar } from "react-icons/io";
 import { IoIosHeart } from "react-icons/io";
+import { GoDotFill } from "react-icons/go";
+import { TbNumber12Small } from "react-icons/tb";
+import { AiOutlineCheck } from "react-icons/ai";
+import { AiOutlineClose } from "react-icons/ai";
 
 const Differences: React.FC = () => {
   return (
@@ -17,20 +21,20 @@ const Differences: React.FC = () => {
               <h1>/</h1>
               <h1>Сравнение</h1>
             </div>
-            <div className="rt-1">
+            <div className="hero__product">
               <h1>Сравнение товаров</h1>
-              <div className="rt-2">
+              <div className="product__1">
                 <button>
                   <AiTwotoneDelete />
                   Удалить все списки
                 </button>
               </div>
             </div>
-            <div className="diff">
+            <div className="hero__differences">
               <div className="differences__content">
-                <button className="ss">
+                <button>
                   Смартфоны 4
-                  <img className="x" src={x} alt="" />
+                  <img className="button__x" src={x} alt="" />
                 </button>
                 <button className="aa">Ноутбуки 2</button>
               </div>
@@ -90,16 +94,185 @@ const Differences: React.FC = () => {
                   </div>
                 </div>
               </div>
-
-              <h1 className="Srav">Сравнение товаров</h1>
-              <div className="Reiting">
+              <div className="Reiting__content">
+                <h1 className="Srav">Сравнение товаров</h1>
+                <div className="Reiting">
+                  <h2>Рейтинг</h2>
+                </div>
                 <div className="Star">
+                  {/* <div className="Star__1"> */}
                   <span>
                     <IoMdStar />
+                    <IoMdStar />
+                    <IoMdStar />
+                    <IoMdStar />
                   </span>
-                  {/* Ratings */}
+                  {/* </div> */}
+                  <p>
+                    <IoMdStar />
+                  </p>
+                  <h4>447</h4>
+
+                  <span>
+                    <IoMdStar />
+                    <IoMdStar />
+                    <IoMdStar />
+                  </span>
+                  <p>
+                    <IoMdStar />
+                    <IoMdStar />
+                  </p>
+                  <h4>100</h4>
+
+                  <span>
+                    <IoMdStar />
+                    <IoMdStar />
+                    <IoMdStar />
+                    <IoMdStar />
+                    <IoMdStar />
+                  </span>
+                  <h4>300</h4>
+
+                  <span>
+                    <IoMdStar />
+                    <IoMdStar />
+                    <IoMdStar />
+                    <IoMdStar />
+                  </span>
+                  <p>
+                    <IoMdStar />
+                  </p>
+                  <h4>112</h4>
                 </div>
-                {/* More Rating components */}
+                <div className="model">
+                  <h2>Модель</h2>
+                </div>
+                <div className="ProMax">
+                  <h5>Apple iPhone 13 Pro Max</h5>
+                  <h5>Apple iPhone 13 Pro</h5>
+                  <h5>Apple iPhone 13</h5>
+                  <h5>Apple iPhone 12</h5>
+                </div>
+                <div className="Rezula">
+                  <h2>Год релиза</h2>
+                </div>
+                <div className="number">
+                  <h5>2021</h5>
+                  <h5>2021</h5>
+                  <h5>2021</h5>
+                  <h5>2021</h5>
+                </div>
+                <div className="Cores">
+                  <h4>
+                    <GoDotFill />
+                  </h4>
+                  <h2>Количество ядер</h2>
+                </div>
+                <div className="nums">
+                  <h1>
+                    <TbNumber12Small />
+                  </h1>
+                  <h5>8</h5>
+                  <h5>6</h5>
+                  <h5>6</h5>
+                </div>
+                <div className="netWorks">
+                  <h4>
+                    <GoDotFill />
+                  </h4>
+                  <h2>Поддержка сетей 4G (LTE)</h2>
+                </div>
+                <div className="icons">
+                  <h3>
+                    <AiOutlineCheck />
+                  </h3>
+                  <h3>
+                    <AiOutlineCheck />
+                  </h3>
+                  <h2>
+                    <AiOutlineClose />
+                  </h2>
+                  <h3>
+                    <AiOutlineCheck />
+                  </h3>
+                </div>
+                <div className="memory">
+                  <h4>
+                    <GoDotFill />
+                  </h4>
+                  <h2>Объем встроенной памяти</h2>
+                </div>
+                <div className="gegeBait">
+                  <h5>128 ГБ</h5>
+                  <h5>64 ГБ</h5>
+                  <h5>64 ГБ</h5>
+                  <h5>64 ГБ</h5>
+                </div>
+
+                <div className="model">
+                  <h2>Модель</h2>
+                </div>
+                <div className="ProMax">
+                  <h5>Apple iPhone 13 Pro Max</h5>
+                  <h5>Apple iPhone 13 Pro</h5>
+                  <h5>Apple iPhone 13</h5>
+                  <h5>Apple iPhone 12</h5>
+                </div>
+                <div className="Rezula">
+                  <h2>Год релиза</h2>
+                </div>
+                <div className="number">
+                  <h5>2021</h5>
+                  <h5>2021</h5>
+                  <h5>2021</h5>
+                  <h5>2021</h5>
+                </div>
+                <div className="Cores">
+                  <h4>
+                    <GoDotFill />
+                  </h4>
+                  <h2>Количество ядер</h2>
+                </div>
+                <div className="nums">
+                  <h1>
+                    <TbNumber12Small />
+                  </h1>
+                  <h5>8</h5>
+                  <h5>6</h5>
+                  <h5>6</h5>
+                </div>
+                <div className="netWorks">
+                  <h4>
+                    <GoDotFill />
+                  </h4>
+                  <h2>Поддержка сетей 4G (LTE)</h2>
+                </div>
+                <div className="icons">
+                  <h3>
+                    <AiOutlineCheck />
+                  </h3>
+                  <h3>
+                    <AiOutlineCheck />
+                  </h3>
+                  <h2>
+                    <AiOutlineClose />
+                  </h2>
+                  <h3>
+                    <AiOutlineCheck />
+                  </h3>
+                </div>
+                <div className="memory">
+                  <h4>
+                    <GoDotFill />
+                  </h4>
+                  <h2>Объем встроенной памяти</h2>
+                </div>
+                <div className="gegeBait">
+                  <h5>128 ГБ</h5>
+                  <h5>64 ГБ</h5>
+                  <h5>64 ГБ</h5>
+                  <h5>64 ГБ</h5>
+                </div>
               </div>
             </div>
           </div>

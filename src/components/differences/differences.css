@@ -11,17 +11,17 @@
   color: rgba(161, 171, 185, 1);
   font-weight: 400;
 }
-.rt-1 {
+.hero__product {
   font-size: 32px;
   position: relative;
   padding-top: 20px;
 }
-.rt-2 {
+.product__1 {
   position: absolute;
   right: 0;
   bottom: 0;
 }
-.rt-2 button,
+.product__1 button,
 a {
   font-size: 16px;
   display: flex;
@@ -31,7 +31,7 @@ a {
   background: none;
   color: rgba(161, 171, 185, 1);
 }
-.diff {
+.hero__differences {
   border: 2px solid #e5e2e2;
 }
 .differences__content {
@@ -47,7 +47,7 @@ a {
   border-radius: 10px;
 }
 
-.x {
+.button__x {
   width: 12px;
 }
 
@@ -60,6 +60,13 @@ a {
   position: relative;
   width: 100%;
   border-right: 2px solid #e5e2e2;
+}
+.difference {
+  border-top: 2px solid #e5e2e2;
+  border-bottom: 2px solid #e5e2e2;
+}
+.Apple h1 {
+  font-size: 20px;
 }
 .Apple img {
   width: 120px;
@@ -93,28 +100,115 @@ a {
   align-items: center;
   justify-content: space-between;
 }
+.Srav {
+  font-size: 30px;
+  margin: 10px;
+}
 
+.Reiting {
+  font-size: 17px;
+  margin: 10px;
+  background: rgba(246, 247, 250, 1);
+}
 .Star {
   display: flex;
   align-items: center;
-  font-size: 20px;
-}
-.Reiting {
-  display: flex;
-  align-items: center;
   justify-content: space-between;
+  font-size: 22px;
 }
 .Star span {
+  color: rgba(255, 77, 77, 1);
+}
+.Star p {
+  color: rgba(195, 202, 212, 1);
+}
+
+.Star h4 {
+  color: rgba(126, 135, 148, 1);
+}
+.model {
+  font-size: 17px;
+  margin: 10px;
+  background: rgba(246, 247, 250, 1);
+}
+.ProMax {
   display: flex;
-  color: #e5e2e2;
+  justify-content: space-between;
+  font-size: 23px;
+  margin: 20px;
+  color: rgba(126, 135, 148, 1);
 }
-.Star span:hover {
-  color: yellow;
+.Rezula {
+  font-size: 17px;
+  margin: 10px;
+  background: rgba(246, 247, 250, 1);
 }
-.difference {
-  border-top: 2px solid #e5e2e2;
-  border-bottom: 2px solid #e5e2e2;
+.number {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 20px 0;
+  font-size: 23px;
+  color: rgba(126, 135, 148, 1);
 }
-.Apple h1 {
-  font-size: 20px;
+.Cores {
+  display: flex;
+  font-size: 17px;
+  margin: 10px;
+  background: rgba(246, 247, 250, 1);
+}
+.Cores h4 {
+  color: rgba(48, 209, 112, 1);
+  margin: 10px;
+}
+.nums {
+  display: flex;
+  justify-content: space-between;
+  font-size: 17px;
+}
+.nums h1 {
+  color: rgba(48, 209, 112, 1);
+  margin: 10px;
+}
+.nums h5 {
+  color: rgba(126, 135, 148, 1);
+  margin: 15px;
+}
+.netWorks {
+  display: flex;
+  font-size: 17px;
+  margin: 10px;
+  background: rgba(246, 247, 250, 1);
+}
+.netWorks h4 {
+  color: rgba(48, 209, 112, 1);
+  margin: 10px;
+}
+.icons {
+  display: flex;
+  justify-content: space-between;
+}
+.icons h3 {
+  color: rgba(48, 209, 112, 1);
+  margin: 10px;
+}
+.icons h2 {
+  color: rgba(255, 59, 48, 1);
+  margin: 8px;
+}
+.memory {
+  display: flex;
+  font-size: 17px;
+  margin: 10px;
+  background: rgba(246, 247, 250, 1);
+}
+.memory h4 {
+  color: rgba(48, 209, 112, 1);
+  margin: 10px;
+}
+.gegeBait {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  font-size: 23px;
+  color: rgba(126, 135, 148, 1);
 }
