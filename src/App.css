@@ -5,7 +5,7 @@
 }
 
 .container {
-    max-width: 1240px;
+    max-width: 1440px;
     width: 100%;
     padding: 0 20px;
     margin: 0 auto;
@@ -27,6 +27,9 @@
     align-items: center;
     gap: 15px;
 }
+.header-content p {
+    font-size: 20px;
+}
 .catalog {
     display: flex;
     align-items: center;
@@ -38,7 +41,7 @@ input {
     border: none;
 }
 .catalog input {
-    width: 500px;
+    width: 450px;
     outline: none;
     background: #f2f5f9;
     border-end-end-radius: 10px;

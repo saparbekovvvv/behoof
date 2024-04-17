@@ -8,7 +8,7 @@
     color: red;
 }
 .storoke {
-    width: 11px;
+    width: 15px;
 }
 .cards {
     display: flex;
@@ -20,6 +20,7 @@
     background: rgb(242, 245, 249);
     border-radius: 10px;
     margin: 20px 0 40px;
+    border: 1px solid black;
 }
 .text {
     display: grid;
@@ -33,10 +34,60 @@
     color: rgb(158, 158, 159);
 }
 .text4 {
+    display: flex;
+    align-items: center;
     color: red;
 }
 
 .phon {
-    width: 320px;
+    width: 335px;
     border-radius: 10px 10px 0 0;
+}
+@media screen and (max-width: 1400px) {
+    .phon,
+    .text {
+        width: 228px;
+    }
+    .text {
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 1023px) {
+    .phon,
+    .text {
+        width: 300px;
+    }
+    .text {
+        font-size: 15px;
+    }
+    .card {
+        width: 300px;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .phon {
+        height: 250px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .phon,
+    .text {
+        width: 300px;
+    }
+    .text {
+        font-size: 15px;
+    }
+    .card {
+        width: 300px;
+    }
+    .cards {
+        display: flex;
+        overflow-y: scroll;
+    }
+
+    .phon {
+        height: 250px;
+    }
 }
