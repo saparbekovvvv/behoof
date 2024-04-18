@@ -5,6 +5,7 @@
   display: flex;
   gap: 20px;
 }
+
 .hero-content {
   display: flex;
   flex-direction: column;
@@ -33,9 +34,9 @@ span {
   border: none;
   width: 200px;
 }
+
 .hero-content-two {
   position: relative;
-
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -68,4 +69,50 @@ span {
   position: absolute;
   right: 30px;
   bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .hero-content,
+  .hero-content-two {
+    max-width: 100%;
+  }
+
+  .hero-content p,
+  span,
+  .hero-content-two p,
+  span {
+    font-size: 32px;
+  }
+
+  .hero-content button,
+  .hero-content-two button {
+    width: 100%;
+  }
+
+  .hero-content-two img {
+    width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content p,
+  span,
+  .hero-content-two p,
+  span {
+    font-size: 28px;
+  }
+
+  .hero-content button,
+  .hero-content-two button {
+    width: 100%;
+  }
+
+  .hero-content-two img {
+    width: 80px;
+  }
 }

@@ -1,0 +1,172 @@
+/* Variables */
+:root {
+  --bg-color: #f2f5f9;
+  --white: #fff;
+  --black: #000;
+  --muted-gray: #7e8794;
+  --button-padding: 12px;
+  --border-radius: 10px;
+  --card-padding: 20px;
+  --card-gap: 20px;
+  --block-width: 70px;
+  --block-height: 4px;
+}
+
+/* Main container */
+#CardHero {
+  padding: 20px;
+  background: var(--bg-color);
+}
+
+/* Card container */
+.card-heroCard {
+  max-width: 570px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--card-gap);
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--card-padding);
+  background: var(--white);
+  margin-top: var(--card-padding);
+  border-radius: var(--border-radius);
+}
+
+/* Button container */
+.card-hero {
+  display: flex;
+  gap: 16px;
+}
+
+/* Card header */
+.card-heroCard h3 {
+  font-size: 14px;
+  color: var(--muted-gray);
+  font-weight: 400;
+}
+.card-heroCard h1 {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* Card icons */
+.card-icons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Buttons */
+.card-hero button {
+  padding: var(--button-padding);
+  border-radius: var(--border-radius);
+  border: none;
+  background: var(--white);
+  color: var(--muted-gray);
+}
+
+.card-heroCard span {
+  display: flex;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid var(--bg-color);
+}
+
+.design-block {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.design-block img {
+  width: 120px;
+}
+.design-block-item {
+  background: rgb(236, 238, 239);
+  width: 70px;
+  border-radius: 2px;
+  height: 4px;
+}
+.design-block-item:hover {
+  background: rgb(255, 77, 77);
+}
+.design-section {
+  display: flex;
+  gap: 3px;
+}
+.card-a {
+  display: grid;
+  gap: 16px;
+}
+.card-a-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.card-a-item h1 {
+  color: #7e8794;
+  font-size: 14px;
+  font-weight: 400;
+}
+.card-hero-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  #CardHero {
+    padding: 10px;
+  }
+
+  .card-heroCard {
+    max-width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    gap: 10px;
+  }
+
+  .card-hero {
+    gap: 10px;
+  }
+
+  .card-hero button {
+    padding: 8px;
+  }
+
+  .card-heroCard h1 {
+    font-size: 14px;
+  }
+
+  .card-icons {
+    gap: 5px;
+  }
+
+  .design-block img {
+    width: 100px;
+  }
+
+  .design-block-item {
+    width: 60px;
+  }
+
+  .design-section {
+    gap: 2px;
+  }
+
+  .card-a {
+    gap: 10px;
+  }
+
+  .card-a-item {
+    gap: 5px;
+  }
+
+  .card-a-item h1 {
+    font-size: 12px;
+  }
+
+  .card-hero-cards {
+    flex-direction: column;
+  }
+}
