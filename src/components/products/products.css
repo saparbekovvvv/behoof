@@ -1,147 +1,178 @@
-.Product {
-  background: rgb(253, 253, 253);
-  border-radius: 10px;
-  margin: 40px 0 0 0;
-}
-
-.products {
+.groupOfProducts_content_objects_object {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
-}
-.title {
-  top: 0;
-  right: 0;
-  background: rgb(246, 247, 250);
-  padding: 10px;
+  border: 2px solid rgb(242, 245, 249);
+  background: #fdfdfd;
   border-radius: 10px;
 }
 
-.Product {
+.groupOfProducts_content_objects_object_info_advantage_title {
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  padding: 10px 0 0 0;
   justify-content: space-between;
-  border: 1px solid rgb(242, 245, 249);
-  padding: 10px;
-  gap: 20px;
-}
-.Pretext {
-  display: flex;
-  align-items: start;
-  justify-content: space-between;
-  gap: 50px;
-}
-.badgr {
-  display: flex;
-  gap: 40px;
-}
-.Iphones {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-  margin: 20px 0 20px 0;
-}
-.Chracters {
-  display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  gap: 10px;
-}
-.charakter {
-  list-style: none;
-  color: rgb(15, 17, 19);
-  font-size: 11px;
-  font-weight: 200;
-  line-height: 18px;
 }
 
-.otsenka {
-  background: rgb(246, 247, 250);
-  padding: 5px;
-  border-radius: 10px;
-  color: rgb(48, 209, 112);
-  font-family: Inter;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 20px;
-  letter-spacing: 0%;
-  text-align: left;
-}
-.othv {
-  background: rgb(246, 247, 250);
-  padding: 5px;
-  border-radius: 10px;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 20px;
-  background: #f7f7f7;
-}
-.Iphone {
-  color: rgb(15, 17, 19);
-  font-family: Inter;
+.groupOfProducts_content_objects_object_info_advantage-name {
   font-size: 24px;
   font-weight: 600;
   line-height: 32px;
-  letter-spacing: 0%;
   text-align: left;
 }
 
-.price {
-  color: rgb(48, 209, 112);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-}
-span {
-  color: rgb(15, 17, 19);
+.groupOfProducts_content_objects_object_info_advantage-price {
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;
-}
-.icon {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-.icons {
-  border: 1px solid gray;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  padding: 4px;
-}
-.border {
-  display: flex;
-  gap: 5px;
-}
-.bad {
-  border-radius: 2px;
-  background: rgb(255, 77, 77);
-  width: 44px;
-  height: 4px;
-}
-.frame {
-  margin: 5px 0 0;
-  font-size: 15px;
-  font-weight: 100;
-  color: rgb(126, 135, 148);
-  font-family: Inter;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-  letter-spacing: 0%;
   text-align: left;
 }
-.btn {
-  margin: 20px 0 0;
-  font-size: 15px;
-  padding: 10px;
-  width: 240px;
-  border: none;
-  color: #f7f7f7;
-  background: rgb(255, 77, 77);
+
+.groupOfProducts_content_objects_object_info_advantage_info_block1-text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: left;
 }
 
-.spans {
-  color: rgb(255, 77, 77);
+.groupOfProducts_content_objects_object_info_advantage_info {
+  display: flex;
+  flex-direction: row;
+  padding: 20px 0;
+  gap: 60px;
+}
+
+.groupOfProducts_content_objects_object_info_buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.groupOfProducts_content_objects_object_info_button {
+  border: none;
+  background: transparent;
+  padding: 0 10px;
+}
+
+.groupOfProducts_content_objects_object_info_advantage_info_block1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.groupOfProducts_content_objects_object_info_advantage_info_block2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.groupOfProducts_content_objects_object-img {
+  max-width: 200px;
+  height: 200px;
+}
+
+.groupOfProducts_content_objects_object {
+  padding: 0 20px;
+}
+.groupOfProducts_content_objects_object_info_buttons1 {
+  display: none;
+}
+
+.groupOfProducts_content_objects_object_info_button {
+  cursor: pointer;
+}
+
+.groupOfProducts_content_objects_object_characteristics_button {
+  padding: 13px 50px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background: #ff4d4d;
+  cursor: pointer;
+}
+
+.groupOfProducts_content_objects_object_characteristics {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+}
+
+.groupOfProducts_content_objects {
+  display: grid;
+  gap: 20px;
+  padding: 0 0 20px 0;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.groupOfProducts_content_objects_object_info_advantage-name1 {
+  display: none;
+}
+
+.groupOfProducts_content_objects_object_info_advantage-price1 {
+  display: none;
+}
+@media screen and (max-width: 375px) {
+  .groupOfProducts_content_objects_object {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .groupOfProducts_content_objects_object_info_advantage_info_block2 {
+    display: none;
+    visibility: hidden;
+  }
+
+  .groupOfProducts_content_objects_object_info_advantage-name {
+    font-size: 18px;
+  }
+  .groupOfProducts_content_objects_object_info_advantage-price {
+    font-size: 18px;
+  }
+
+  .groupOfProducts_content_objects_object_info_advantage_title {
+    flex-direction: column;
+  }
+}
+@media (max-width: 1000px) {
+  .groupOfProducts_content_objects_object_info_advantage_info_block1 {
+    display: none;
+  }
+  .phone_info_infos {
+    display: none;
+  }
+  .groupOfProducts_content_objects_object_characteristics {
+    display: none;
+  }
+  .groupOfProducts_content_objects_object-img {
+    width: 150px;
+    height: 150px;
+  }
+  .groupOfProducts_content_objects_object_info_advantage-name {
+    display: none;
+  }
+  .groupOfProducts_content_objects_object_info_advantage-name1 {
+    display: block;
+  }
+  .groupOfProducts_content_objects_object_info_advantage-price {
+    display: none;
+  }
+  .groupOfProducts_content_objects_object_info_advantage-price1 {
+    display: block;
+  }
+  .groupOfProducts_content_objects_object_info_buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .groupOfProducts_content_objects_object_info_buttons1 {
+    display: block;
+  }
+  .groupOfProducts_content_objects_object_info_buttons {
+    display: none;
+  }
+  .groupOfProducts_content_objects_object {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
