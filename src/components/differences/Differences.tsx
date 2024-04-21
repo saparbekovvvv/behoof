@@ -9,13 +9,14 @@ import { GoDotFill } from "react-icons/go";
 import { TbNumber12Small } from "react-icons/tb";
 import { AiOutlineCheck } from "react-icons/ai";
 import { AiOutlineClose } from "react-icons/ai";
+import { MdOutlineStarHalf } from "react-icons/md";
 
 const Differences: React.FC = () => {
   return (
     <div className="hero">
       <section id="Differences">
         <div className="container">
-          <div className="content">
+          <div className="difren__">
             <div className="differences">
               <h2>Главная</h2>
               <h1>/</h1>
@@ -30,99 +31,114 @@ const Differences: React.FC = () => {
                 </button>
               </div>
             </div>
-            <div className="hero__differences">
-              <div className="differences__content">
-                <button>
-                  Смартфоны 4
-                  <img className="button__x" src={x} alt="" />
-                </button>
-                <button className="aa">Ноутбуки 2</button>
-              </div>
-              <div className="difference">
-                <div className="Apple">
-                  <div className="Product">
-                    <img src={jieg} alt="" />
-                    <AiTwotoneDelete className="delete" />
-                    <h6 className="phone">Смартфоны</h6>
-                    <h1>Apple iPhone 13 Pro Max 256 ГБ серый </h1>
-                    <h6 className="sena">Цена</h6>
-                    <div className="Price">
-                      <h2 className="prise">114 099 ₽</h2>
-                      <span>
-                        <IoIosHeart />
-                      </span>
-                    </div>
+          </div>
+
+          <div className="hero__differences">
+            <div className="differences__content">
+              <button>
+                Смартфоны 4
+                <img className="button__x" src={x} alt="" />
+              </button>
+              <button className="aa">Ноутбуки 2</button>
+            </div>
+            <div className="difference">
+              <div className="Apple">
+                <div className="Product">
+                  <img src={jieg} alt="" />
+                  <AiTwotoneDelete className="delete" />
+                  <h6 className="phone">Смартфоны</h6>
+                  <h1>Apple iPhone 13 Pro Max 256 ГБ серый </h1>
+                  <h6 className="sena">Цена</h6>
+                  <div className="Price">
+                    <h2 className="prise">114 099 ₽</h2>
+                    <span>
+                      <IoIosHeart />
+                    </span>
                   </div>
-                  <div className="Product">
-                    <img src={jieg} alt="" />
-                    <AiTwotoneDelete className="delete" />
-                    <h6 className="phone">Смартфоны</h6>
-                    <h1>Apple iPhone 13 Pro Max 256 ГБ серый </h1>
-                    <h6 className="sena">Цена</h6>
-                    <div className="Price">
-                      <h2 className="prise">114 099 ₽</h2>
-                      <span>
-                        <IoIosHeart />
-                      </span>
-                    </div>
+                </div>
+                <div className="Product">
+                  <img src={jieg} alt="" />
+                  <AiTwotoneDelete className="delete" />
+                  <h6 className="phone">Смартфоны</h6>
+                  <h1>Apple iPhone 13 Pro Max 256 ГБ серый </h1>
+                  <h6 className="sena">Цена</h6>
+                  <div className="Price">
+                    <h2 className="prise">114 099 ₽</h2>
+                    <span>
+                      <IoIosHeart />
+                    </span>
                   </div>
-                  <div className="Product">
-                    <img src={jieg} alt="" />
-                    <AiTwotoneDelete className="delete" />
-                    <h6 className="phone">Смартфоны</h6>
-                    <h1>Apple iPhone 13 Pro Max 256 ГБ серый </h1>
-                    <h6 className="sena">Цена</h6>
-                    <div className="Price">
-                      <h2 className="prise">114 099 ₽</h2>
-                      <span>
-                        <IoIosHeart />
-                      </span>
-                    </div>
+                </div>
+                <div className="Product">
+                  <img src={jieg} alt="" />
+                  <AiTwotoneDelete className="delete" />
+                  <h6 className="phone">Смартфоны</h6>
+                  <h1>Apple iPhone 13 Pro Max 256 ГБ серый </h1>
+                  <h6 className="sena">Цена</h6>
+                  <div className="Price">
+                    <h2 className="prise">114 099 ₽</h2>
+                    <span>
+                      <IoIosHeart />
+                    </span>
                   </div>
-                  <div className="Product">
-                    <img src={jieg} alt="" />
-                    <AiTwotoneDelete className="delete" />
-                    <h6 className="phone">Смартфоны</h6>
-                    <h1>Apple iPhone 13 Pro Max 256 ГБ серый </h1>
-                    <h6 className="sena">Цена</h6>
-                    <div className="Price">
-                      <h2 className="prise">114 099 ₽</h2>
-                      <span>
-                        <IoIosHeart />
-                      </span>
-                    </div>
+                </div>
+                <div className="Product">
+                  <img src={jieg} alt="" />
+                  <AiTwotoneDelete className="delete" />
+                  <h6 className="phone">Смартфоны</h6>
+                  <h1>Apple iPhone 13 Pro Max 256 ГБ серый </h1>
+                  <h6 className="sena">Цена</h6>
+                  <div className="Price">
+                    <h2 className="prise">114 099 ₽</h2>
+                    <span>
+                      <IoIosHeart />
+                    </span>
                   </div>
                 </div>
               </div>
-              <div className="Reiting__content">
-                <h1 className="Srav">Сравнение товаров</h1>
-                <div className="Reiting">
-                  <h2>Рейтинг</h2>
-                </div>
-                <div className="Star">
-                  {/* <div className="Star__1"> */}
-                  <span>
-                    <IoMdStar />
-                    <IoMdStar />
-                    <IoMdStar />
-                    <IoMdStar />
-                  </span>
-                  {/* </div> */}
-                  <p>
-                    <IoMdStar />
-                  </p>
-                  <h4>447</h4>
+            </div>
+            <div className="btn-disp">
+              <button className="btn">Добавить товар</button>
+            </div>
+            <div className="Reiting__content">
+              <h1 className="Srav">Сравнение товаров</h1>
+              <div className="Reiting">
+                <h2>Рейтинг</h2>
+              </div>
+              <div className="Star">
+                <div className="Star__12">
+                  <div className="part-star">
+                    <MdOutlineStarHalf />
+                  </div>
 
                   <span>
                     <IoMdStar />
                     <IoMdStar />
                     <IoMdStar />
+                    <IoMdStar />
+                    <IoMdStar color="rgba(195, 202, 212, 1)" />
                   </span>
-                  <p>
+                  <h4>447</h4>
+                </div>
+
+                <div className="Star__13">
+                  <div className="part-star">
+                    <MdOutlineStarHalf />
+                  </div>
+
+                  <span>
                     <IoMdStar />
                     <IoMdStar />
-                  </p>
+                    <IoMdStar />
+                    <IoMdStar color="rgba(195,202,212,1)" />
+                    <IoMdStar color="rgba(195,202,212,1)" />
+                  </span>
                   <h4>100</h4>
+                </div>
+                <div className="Star__14">
+                  <div className="part-star">
+                    <MdOutlineStarHalf />
+                  </div>
 
                   <span>
                     <IoMdStar />
@@ -132,18 +148,23 @@ const Differences: React.FC = () => {
                     <IoMdStar />
                   </span>
                   <h4>300</h4>
+                </div>
+                <div className="Star__15">
+                  <div className="part-star">
+                    <MdOutlineStarHalf />
+                  </div>
 
                   <span>
                     <IoMdStar />
                     <IoMdStar />
                     <IoMdStar />
                     <IoMdStar />
+                    <IoMdStar color="rgba(195,202,212,1)" />
                   </span>
-                  <p>
-                    <IoMdStar />
-                  </p>
                   <h4>112</h4>
                 </div>
+              </div>
+              <div className="rezult">
                 <div className="model">
                   <h2>Модель</h2>
                 </div>

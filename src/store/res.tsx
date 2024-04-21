@@ -6,27 +6,36 @@ import { AiOutlineCheck } from "react-icons/ai";
 
 const Res: React.FC = () => {
   return (
-    <div className="hero">
+    <div className="heber">
       <div className="container">
+        <div className="content__knopka">
+          <div className="content__1">
+            <h1>
+              <AiOutlineExclamation />
+            </h1>
+            <h2>Сообщение об ошибке</h2>
+            <h2>
+              <AiOutlineClose />
+            </h2>
+          </div>
+          <div className="content__2">
+            <h1>
+              <AiOutlineCheck />
+            </h1>
+            <h2>Сообщение об успехе</h2>
+            <h2>
+              <AiOutlineClose />
+            </h2>
+          </div>
+        </div>
+
         <div className="content">
           <h1>Упс...</h1>
           <h3>Страница не найдена</h3>
           <p>
             Тут что то упало и это не страшно! <br /> Но мы все сохранили ;
           </p>
-          <button>Перейти на главную</button>
-        </div>
-        <div className="content__knopka">
-          <div className="content__1">
-            <AiOutlineExclamation />
-            <h5>Сообщение об ошибке</h5>
-            <AiOutlineClose />
-          </div>
-          <div className="content__2">
-            <AiOutlineCheck />
-            <h5>Сообщение об успехе</h5>
-            <AiOutlineClose />
-          </div>
+          <button className="knopka">Перейти на главную</button>
         </div>
       </div>
     </div>

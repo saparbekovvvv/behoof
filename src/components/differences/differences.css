@@ -4,22 +4,23 @@
 }
 .differences {
   display: flex;
-  align-items: center;
   gap: 15px;
 }
 .differences h2 {
   color: rgba(161, 171, 185, 1);
   font-weight: 400;
 }
-.hero__product {
-  font-size: 32px;
-  position: relative;
-  padding-top: 20px;
+.differences h1 {
+  font-size: 24px;
 }
-.product__1 {
-  position: absolute;
-  right: 0;
-  bottom: 0;
+.hero__product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 22px;
+  position: relative;
+
+  padding-top: 20px;
 }
 .product__1 button,
 a {
@@ -31,6 +32,7 @@ a {
   background: none;
   color: rgba(161, 171, 185, 1);
 }
+
 .hero__differences {
   border: 2px solid #e5e2e2;
 }
@@ -131,6 +133,23 @@ a {
   margin: 10px;
   background: rgba(246, 247, 250, 1);
 }
+.Star__12 {
+  display: flex;
+  gap: 6px;
+}
+
+.Star__13 {
+  display: flex;
+  gap: 6px;
+}
+.Star__14 {
+  display: flex;
+  gap: 6px;
+}
+.Star__15 {
+  display: flex;
+  gap: 6px;
+}
 .ProMax {
   display: flex;
   justify-content: space-between;
@@ -211,4 +230,93 @@ a {
   margin: 20px;
   font-size: 23px;
   color: rgba(126, 135, 148, 1);
+}
+.part-star {
+  display: none;
+  color: rgba(255, 77, 77, 1);
+}
+.btn {
+  display: none;
+}
+
+@media screen and (max-width: 689px) {
+  .differences {
+    display: none;
+  }
+  .Star span:nth-child(2) {
+    display: none;
+  }
+  .Star {
+    justify-content: stretch;
+    gap: 50px;
+  }
+  .Star__13 {
+    display: none;
+  }
+  .Star__15 {
+    display: none;
+  }
+  .btn-disp {
+    display: flex;
+    justify-content: center;
+  }
+  .part-star {
+    display: block;
+  }
+  .ProMax :nth-child(1) {
+    display: none;
+  }
+  .ProMax :nth-child(2) {
+    display: none;
+  }
+  .number :nth-child(1) {
+    display: none;
+  }
+  .number :nth-child(2) {
+    display: none;
+  }
+  .nums :nth-child(1) {
+    display: none;
+  }
+  .nums :nth-child(2) {
+    display: none;
+  }
+  .icons :nth-child(1) {
+    display: none;
+  }
+  .icons :nth-child(2) {
+    display: none;
+  }
+  .gegeBait :nth-child(1) {
+    display: none;
+  }
+  .gegeBait :nth-child(2) {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  .difren__ {
+    display: flex;
+    flex-direction: row;
+  }
+  .product__1 {
+    margin-top: 10px;
+  }
+  .hero__product {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: start;
+  }
+  .btn {
+    display: block;
+    color: rgb(198, 109, 109);
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1117px) {
+  .Apple {
+    overflow: scroll;
+    width: 90%;
+  }
 }
