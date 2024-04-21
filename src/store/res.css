@@ -32,7 +32,10 @@
 }
 .content__knopka {
   position: absolute;
-  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  right: 15px;
 }
 .content__1 {
   display: flex;
@@ -42,6 +45,7 @@
   width: 100%;
   align-items: center;
   box-shadow: 0 1px 3px 1px;
+  border-radius: 10px;
 }
 .content__1:hover {
   box-shadow: 2px 2px 2px 2px #a3a0a0;
@@ -53,11 +57,16 @@
   background: rgb(238, 191, 191);
   color: rgb(232, 48, 48);
 }
+.content__1 h2 {
+  color: rgba(38, 49, 65, 1);
+}
 .content__1 h3 .content__1 h4 {
   color: rgba(143, 150, 160, 1);
 }
 .content__2 {
   display: flex;
+  border-radius: 10px;
+  color: rgba(38, 49, 65, 1);
   padding: 10px;
   border: 1px solid #fdfdfd;
   max-width: 340px;
@@ -81,4 +90,25 @@
 }
 .content {
   margin-top: 16%;
+}
+@media screen and (max-width: 1210px) {
+  .content__1 {
+    font-size: 14px;
+    width: 100%;
+    gap: 20px;
+  }
+  .content__1 h1 {
+    font-size: 14px;
+  }
+  .content__2 {
+    font-size: 14px;
+    width: 100%;
+    gap: 20px;
+  }
+  .content__2 h1 {
+    font-size: 14px;
+  }
+  .content {
+    padding-top: 200px;
+  }
 }
