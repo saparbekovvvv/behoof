@@ -2,17 +2,18 @@
   background: rgb(242, 245, 249);
   padding: 40px;
 }
+
 .footer {
   display: flex;
   flex-wrap: wrap;
   gap: 140px;
 }
+
 .logo-footer {
   display: flex;
   align-items: center;
   gap: 15px;
 }
-
 .logo-footer a {
   color: rgb(15, 17, 19);
   font-family: Verdana;
@@ -30,20 +31,18 @@
   gap: 20px;
   padding-top: 22px;
 }
-
 .socials span {
   font-size: 1.1rem;
   color: #666;
 }
-
 .socials a {
   color: #333;
   font-size: 1.5rem;
   transition: color 0.3s ease;
 }
-
 .socials a:hover {
   color: #ff6600;
+  transform: scale(1.2);
 }
 
 .user-info ul,
@@ -55,7 +54,6 @@
   list-style: none;
   padding: 0;
 }
-
 .user-info li,
 .popular-categories li,
 .behoof-team li {
@@ -63,7 +61,6 @@
   font-size: 16px;
   font-weight: 400;
 }
-
 .user-info span,
 .popular-categories span,
 .behoof-team span {
@@ -71,6 +68,7 @@
   font-size: 16px;
   font-weight: 400;
 }
+
 .foot {
   display: flex;
   flex-direction: column;
@@ -89,9 +87,55 @@
   padding-top: 20px;
   border-top: 1px solid rgb(236, 238, 239);
   color: rgb(126, 135, 148);
-  font-size: 16px;
   font-weight: 400;
 }
-.copyright a {
+.copyright span,
+a {
+  font-size: 16px;
   color: rgb(126, 135, 148);
+}
+
+@media (max-width: 768px) {
+  .footer {
+    gap: 40px;
+  }
+
+  .logo-footer a {
+    font-size: 28px;
+  }
+
+  .socials a {
+    font-size: 1.2rem;
+  }
+
+  .user-info li,
+  .popular-categories li,
+  .behoof-team li {
+    font-size: 14px;
+  }
+
+  .copyright {
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .logo-footer a {
+    font-size: 24px;
+  }
+
+  .socials a {
+    font-size: 1rem;
+  }
+
+  .user-info li,
+  .popular-categories li,
+  .behoof-team li {
+    font-size: 12px;
+  }
 }
