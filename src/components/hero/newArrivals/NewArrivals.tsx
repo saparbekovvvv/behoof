@@ -1,7 +1,12 @@
 import React from "react";
 import "./newArrivals.css";
 import watches from "../../../assets/apple-watches.png";
-import headphones from "../../../assets/2272131 1 (5).png";
+import headphones from "../../../assets/headphone.png";
+import ps4 from "../../../assets/ps4.png";
+import iphone from "../../../assets/2272131 1.png";
+import tablet from "../../../assets/2272131 1 (2).png";
+import accessories from "../../../assets/2272131 1 (7).png";
+import macbook from "../../../assets/macbook.png";
 
 const NewArrivals: React.FC = () => {
   const Arrivals = [
@@ -21,42 +26,42 @@ const NewArrivals: React.FC = () => {
     },
     {
       id: 3,
-      img: watches,
+      img: ps4,
       pretitle: "Умные часы",
       title: "Apple iPhone 13 Pro Max 256 ГБ серый",
       price: "114 099 ₽",
     },
     {
       id: 4,
-      img: watches,
+      img: iphone,
       pretitle: "Смартфоны",
       title: "Apple iPhone 13 Pro Max 256 ГБ серый",
       price: "114 099 ₽",
     },
     {
       id: 5,
-      img: watches,
+      img: tablet,
       pretitle: "Планшеты",
       title: "Apple iPhone 13 Pro Max 256 ГБ серый",
       price: "114 099 ₽",
     },
     {
       id: 6,
-      img: watches,
+      img: iphone,
       pretitle: "Смартфоны",
       title: "Apple iPhone 13 Pro Max 256 ГБ серый",
       price: "114 099 ₽",
     },
     {
       id: 7,
-      img: watches,
+      img: accessories,
       pretitle: "Аксесуары",
       title: "Apple iPhone 13 Pro Max 256 ГБ серый",
       price: "114 099 ₽",
     },
     {
       id: 8,
-      img: watches,
+      img: macbook,
       pretitle: "Ноутбуки",
       title: "Apple iPhone 13 Pro Max 256 ГБ серый",
       price: "114 099 ₽",

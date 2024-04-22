@@ -1,5 +1,6 @@
 import "./hero.css";
 import phone from "../../assets/Дизайн без названия (4).png";
+import { NavLink } from "react-router-dom";
 function Hero() {
   return (
     <section id="Hero">
@@ -10,7 +11,9 @@ function Hero() {
               <span>1.8 млн</span> товаров в <span>2272</span> магазинах <br />{" "}
               найди, сравни, выберай!
             </p>
-            <button>Перейти к категориям</button>
+            <NavLink to="/products">
+              <button>Перейти к категориям</button>
+            </NavLink>
           </div>
           <div className="hero-content-two">
             <p>

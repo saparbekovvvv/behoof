@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import "./cardHero.css";
-import { CiHeart, CiCircleRemove } from "react-icons/ci";
-import { IoStatsChartOutline } from "react-icons/io5";
+import { IoIosHeart } from "react-icons/io";
+
+import { IoIosStats } from "react-icons/io";
 import "swiper/css";
 import "swiper/css/navigation";
 import img from "../../../assets/2272131 1.png";
+import { NavLink } from "react-router-dom";
 
 const CardHero: React.FC = () => {
   const [activeButtons, setActiveButtons] = useState<Array<boolean>>(
@@ -31,17 +33,18 @@ const CardHero: React.FC = () => {
             "Дисплей",
             "Батарея",
           ].map((label, index) => (
-            <button
-              key={index}
-              onClick={() => handlerButtonClick(index)}
-              style={{
-                backgroundColor: activeButtons[index] ? "#fff" : "initial",
-                color: activeButtons[index] ? "rgb(255, 77, 77)" : "black",
-              }}
-            >
-              {label}
-              {activeButtons[index] && <CiCircleRemove />}
-            </button>
+            <div key={index} className="card-flex">
+              <button
+                className="card-hero-button"
+                onClick={() => handlerButtonClick(index)}
+                style={{
+                  color: activeButtons[index] ? "#ff4d4d" : "black",
+                }}
+              >
+                {label}
+                {activeButtons[index] && <span>X</span>}
+              </button>
+            </div>
           ))}
         </div>
         <div className="card-hero-cards">
@@ -52,12 +55,17 @@ const CardHero: React.FC = () => {
                 <h1>Apple iPhone 13 Pro Max 256 ГБ серый</h1>
               </div>
               <div className="card-icons">
-                <span>
-                  <CiHeart />
-                </span>
-                <span>
-                  <IoStatsChartOutline />
-                </span>
+                <NavLink to="/favorites">
+                  <span>
+                    <IoIosHeart />
+                  </span>
+                </NavLink>
+
+                <NavLink to="/differences">
+                  <span>
+                    <IoIosStats />
+                  </span>
+                </NavLink>
               </div>
               <div className="design-block">
                 <img src={img} alt="Apple iPhone 13 Pro Max 256 ГБ серый" />
@@ -74,7 +82,15 @@ const CardHero: React.FC = () => {
                       <h1>{label}</h1>
                       <div className="design-section">
                         {blockContentArray.map((ind) => (
-                          <div key={ind} className="design-block-item"></div>
+                          <div
+                            key={ind}
+                            className="design-block-item"
+                            style={{
+                              backgroundColor: activeButtons[index]
+                                ? "#000"
+                                : "#f7f7f7",
+                            }}
+                          ></div>
                         ))}
                       </div>
                     </div>
