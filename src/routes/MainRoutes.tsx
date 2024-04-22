@@ -6,7 +6,7 @@ import Favorite from "../favorite/favorite";
 const PUBLIC = [
     { path: "/", element: <Main />, key: 1 },
     { path: "/auth", element: <Auth />, key: 6 },
-    { path: "./favorite", element: <Favorite />, key: 2 },
+    { path: "/favorite", element: <Favorite />, key: 7 },
 ];
 const MainRoutes = () => {
     return (
