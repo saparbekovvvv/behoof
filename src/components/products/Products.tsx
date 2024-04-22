@@ -21,7 +21,7 @@ const Products: React.FC = () => {
             </p>
           </div>
         </div>
-        {[1, 2].map((idx) => (
+        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((idx) => (
           <div key={idx} className="groupOfProducts_content_objects_object">
             <div className="groupOfProducts_content_objects_object_info_buttons1">
               <h1 className="groupOfProducts_content_objects_object_info_advantage-name1">
