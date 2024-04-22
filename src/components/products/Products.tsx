@@ -21,27 +21,27 @@ const Products: React.FC = () => {
             </p>
           </div>
         </div>
-        {[1, 2, ].map((idx) => (
+        {[1, 2].map((idx) => (
           <div key={idx} className="groupOfProducts_content_objects_object">
             <div className="groupOfProducts_content_objects_object_info_buttons1">
-                <h1 className="groupOfProducts_content_objects_object_info_advantage-name1">
-                  Apple iPhone 13 Pro Max 256 ГБ серый
-                </h1>
-                <h1 className="groupOfProducts_content_objects_object_info_advantage-price1">
-                  78 999 ₽
-                </h1>
-                <div>
-                  <button className="groupOfProducts_content_objects_object_info_button">
-                    <img src={heart} alt="" />
-                  </button>
-                  <Link
-                    to={"/differences"}
-                    className="groupOfProducts_content_objects_object_info_button"
-                  >
-                    <img src={chat} alt="no image" />
-                  </Link>
-                </div>
+              <h1 className="groupOfProducts_content_objects_object_info_advantage-name1">
+                Apple iPhone 13 Pro Max 256 ГБ серый
+              </h1>
+              <h1 className="groupOfProducts_content_objects_object_info_advantage-price1">
+                78 999 ₽
+              </h1>
+              <div>
+                <button className="groupOfProducts_content_objects_object_info_button">
+                  <img src={heart} alt="" />
+                </button>
+                <Link
+                  to={"/differences"}
+                  className="groupOfProducts_content_objects_object_info_button"
+                >
+                  <img src={chat} alt="no image" />
+                </Link>
               </div>
+            </div>
             <img
               src={img}
               alt=""
@@ -55,6 +55,8 @@ const Products: React.FC = () => {
                 <h1 className="groupOfProducts_content_objects_object_info_advantage-price1">
                   78 999 ₽
                 </h1>
+                <h1 className="text">4.4 Оценка экспертов </h1>
+                <h1>4.0</h1>
                 <div>
                   <button className="groupOfProducts_content_objects_object_info_button">
                     <img src={heart} alt="" />
