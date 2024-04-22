@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./product.css";
 import iphone from "../../assets/172.webp";
-import Card from "./productCard/productCard";
 import { FaStar } from "react-icons/fa6";
 import re from "../../assets/20.jpg";
 import diag from "../../assets/diag.svg";
