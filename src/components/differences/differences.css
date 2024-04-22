@@ -1,0 +1,322 @@
+#Differences {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.differences {
+  display: flex;
+  gap: 15px;
+}
+.differences h2 {
+  color: rgba(161, 171, 185, 1);
+  font-weight: 400;
+}
+.differences h1 {
+  font-size: 24px;
+}
+.hero__product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 22px;
+  position: relative;
+
+  padding-top: 20px;
+}
+.product__1 button,
+a {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: none;
+  background: none;
+  color: rgba(161, 171, 185, 1);
+}
+
+.hero__differences {
+  border: 2px solid #e5e2e2;
+}
+.differences__content {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+}
+.differences__content button {
+  padding: 10px;
+  border: 2px solid #e5e2e2;
+  background: #fff;
+  color: rgba(126, 135, 148, 1);
+  border-radius: 10px;
+}
+
+.button__x {
+  width: 12px;
+}
+
+.Apple {
+  display: flex;
+}
+.Product {
+  max-width: 300px;
+  padding: 20px;
+  position: relative;
+  width: 100%;
+  border-right: 2px solid #e5e2e2;
+}
+.difference {
+  border-top: 2px solid #e5e2e2;
+  border-bottom: 2px solid #e5e2e2;
+}
+.Apple h1 {
+  font-size: 20px;
+}
+.Apple img {
+  width: 120px;
+}
+
+.delete {
+  position: absolute;
+  right: 0;
+}
+
+.phone {
+  margin: 5px 0 0;
+  font-size: 10px;
+  color: rgba(126, 135, 148, 1);
+}
+.Apple {
+  font-size: 15px;
+  color: rgba(38, 49, 65, 1);
+}
+.sena {
+  margin: 5px 0 0;
+  width: 10px;
+  color: rgba(126, 135, 148, 1);
+}
+.prise {
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+.Price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Srav {
+  font-size: 30px;
+  margin: 10px;
+}
+
+.Reiting {
+  font-size: 17px;
+  margin: 10px;
+  background: rgba(246, 247, 250, 1);
+}
+.Star {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 22px;
+}
+.Star span {
+  color: rgba(255, 77, 77, 1);
+}
+.Star p {
+  color: rgba(195, 202, 212, 1);
+}
+
+.Star h4 {
+  color: rgba(126, 135, 148, 1);
+}
+.model {
+  font-size: 17px;
+  margin: 10px;
+  background: rgba(246, 247, 250, 1);
+}
+.Star__12 {
+  display: flex;
+  gap: 6px;
+}
+
+.Star__13 {
+  display: flex;
+  gap: 6px;
+}
+.Star__14 {
+  display: flex;
+  gap: 6px;
+}
+.Star__15 {
+  display: flex;
+  gap: 6px;
+}
+.ProMax {
+  display: flex;
+  justify-content: space-between;
+  font-size: 23px;
+  margin: 20px;
+  color: rgba(126, 135, 148, 1);
+}
+.Rezula {
+  font-size: 17px;
+  margin: 10px;
+  background: rgba(246, 247, 250, 1);
+}
+.number {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 20px 0;
+  font-size: 23px;
+  color: rgba(126, 135, 148, 1);
+}
+.Cores {
+  display: flex;
+  font-size: 17px;
+  margin: 10px;
+  background: rgba(246, 247, 250, 1);
+}
+.Cores h4 {
+  color: rgba(48, 209, 112, 1);
+  margin: 10px;
+}
+.nums {
+  display: flex;
+  justify-content: space-between;
+  font-size: 17px;
+}
+.nums h1 {
+  color: rgba(48, 209, 112, 1);
+  margin: 10px;
+}
+.nums h5 {
+  color: rgba(126, 135, 148, 1);
+  margin: 15px;
+}
+.netWorks {
+  display: flex;
+  font-size: 17px;
+  margin: 10px;
+  background: rgba(246, 247, 250, 1);
+}
+.netWorks h4 {
+  color: rgba(48, 209, 112, 1);
+  margin: 10px;
+}
+.icons {
+  display: flex;
+  justify-content: space-between;
+}
+.icons h3 {
+  color: rgba(48, 209, 112, 1);
+  margin: 10px;
+}
+.icons h2 {
+  color: rgba(255, 59, 48, 1);
+  margin: 8px;
+}
+.memory {
+  display: flex;
+  font-size: 17px;
+  margin: 10px;
+  background: rgba(246, 247, 250, 1);
+}
+.memory h4 {
+  color: rgba(48, 209, 112, 1);
+  margin: 10px;
+}
+.gegeBait {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  font-size: 23px;
+  color: rgba(126, 135, 148, 1);
+}
+.part-star {
+  display: none;
+  color: rgba(255, 77, 77, 1);
+}
+.btn {
+  display: none;
+}
+
+@media screen and (max-width: 689px) {
+  .differences {
+    display: none;
+  }
+  .Star span:nth-child(2) {
+    display: none;
+  }
+  .Star {
+    justify-content: stretch;
+    gap: 50px;
+  }
+  .Star__13 {
+    display: none;
+  }
+  .Star__15 {
+    display: none;
+  }
+  .btn-disp {
+    display: flex;
+    justify-content: center;
+  }
+  .part-star {
+    display: block;
+  }
+  .ProMax :nth-child(1) {
+    display: none;
+  }
+  .ProMax :nth-child(2) {
+    display: none;
+  }
+  .number :nth-child(1) {
+    display: none;
+  }
+  .number :nth-child(2) {
+    display: none;
+  }
+  .nums :nth-child(1) {
+    display: none;
+  }
+  .nums :nth-child(2) {
+    display: none;
+  }
+  .icons :nth-child(1) {
+    display: none;
+  }
+  .icons :nth-child(2) {
+    display: none;
+  }
+  .gegeBait :nth-child(1) {
+    display: none;
+  }
+  .gegeBait :nth-child(2) {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  .difren__ {
+    display: flex;
+    flex-direction: row;
+  }
+  .product__1 {
+    margin-top: 10px;
+  }
+  .hero__product {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: start;
+  }
+  .btn {
+    display: block;
+    color: rgb(198, 109, 109);
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1117px) {
+  .Apple {
+    overflow: scroll;
+    width: 90%;
+  }
+}
