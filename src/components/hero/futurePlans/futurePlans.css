@@ -1,0 +1,69 @@
+/* Main section */
+#FuturePlans {
+  padding: 30px;
+}
+
+/* FuturePlans container */
+.futurePlans {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Header */
+.futurePlans h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Future content container */
+.future-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Number in future-content */
+.future-content h1 {
+  color: rgb(255, 77, 77);
+  font-size: 48px;
+  font-weight: 800;
+}
+
+/* Paragraph in future-content */
+.future-content p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  #FuturePlans {
+    padding: 15px;
+  }
+
+  .futurePlans {
+    gap: 15px;
+  }
+
+  /* Reduce font size for smaller screens */
+  .futurePlans h1 {
+    font-size: 20px;
+  }
+
+  /* Stack content vertically */
+  .future-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  /* Adjust font size for numbers */
+  .future-content h1 {
+    font-size: 36px;
+  }
+
+  /* Adjust paragraph font size */
+  .future-content p {
+    font-size: 14px;
+  }
+}

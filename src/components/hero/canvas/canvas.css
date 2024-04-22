@@ -1,0 +1,120 @@
+/* Main Canvas section */
+#Canvas {
+  padding: 30px 0;
+}
+
+/* Canvas container */
+.canvas {
+  padding: 100px;
+  background: #f6f7fa;
+  border-radius: 10px;
+  font-size: 48px;
+  position: relative;
+}
+
+/* Canvas text and styling */
+.canvas span {
+  color: #ff4d4d;
+  font-size: 48px;
+}
+.canvas p {
+  color: #000;
+  font-weight: 700;
+}
+
+/* Canvas images and content */
+.canvas-img {
+  display: flex;
+  gap: 30px;
+}
+.canvas-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Absolute positioning for images */
+.canvas-img-two {
+  display: flex;
+  position: absolute;
+  top: 78px;
+  right: 240px;
+  z-index: 1;
+}
+.canvas-iphone {
+  position: absolute;
+  top: 44px;
+  left: 200px;
+  z-index: -1;
+}
+.canvas-iphone img {
+  width: 260px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  /* Reduce padding for smaller screens */
+  .canvas {
+    padding: 50px;
+    font-size: 32px;
+  }
+
+  /* Adjust text size for smaller screens */
+  .canvas span {
+    font-size: 32px;
+  }
+
+  /* Adjust gap and flex direction for images */
+  .canvas-img {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* Adjust the position of canvas-img-two */
+  .canvas-img-two {
+    top: 60px;
+    right: 120px;
+  }
+
+  /* Adjust the position of canvas-iphone */
+  .canvas-iphone {
+    top: 20px;
+    left: 100px;
+  }
+
+  /* Adjust image size */
+  .canvas-iphone img {
+    width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Further reduce padding and font size for mobile */
+  .canvas {
+    padding: 30px;
+    font-size: 24px;
+  }
+
+  /* Further adjust text size */
+  .canvas span {
+    font-size: 24px;
+  }
+
+  /* Further adjust position of canvas-img-two */
+  .canvas-img-two {
+    display: none;
+    top: 50px;
+    right: 60px;
+  }
+
+  /* Further adjust position of canvas-iphone */
+  .canvas-iphone {
+    top: 10px;
+    left: 50px;
+  }
+
+  /* Further adjust image size */
+  .canvas-iphone img {
+    width: 150px;
+  }
+}
