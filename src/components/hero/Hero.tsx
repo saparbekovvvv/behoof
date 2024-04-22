@@ -1,53 +1,10 @@
-<<<<<<< HEAD
 import "./hero.css";
 import phone from "../../assets/Дизайн без названия (4).png";
 import { NavLink } from "react-router-dom";
-
-=======
-<<<<<<< HEAD
-import { NavLink } from "react-router-dom";
-
-=======
-<<<<<<< HEAD
-import { NavLink } from "react-router-dom";
-
-=======
-import "./hero.css";
-import phone from "../../assets/Дизайн без названия (4).png";
-import { NavLink } from "react-router-dom";
->>>>>>> 97a832c9859067a4aed50110b2f70900bf892416
->>>>>>> e456ef855208a7d48f3c61a0389b80df396aedf1
->>>>>>> 32df4b463af9a71b9736790fe2f3ea75c4b47cfe
 function Hero() {
-<<<<<<< HEAD
-    return (
-        <section id="Main">
-            <div className="container">
-                <div className="main">
-                    <p>
-                        1.8 млн товаров в 2272 магазинах найди, сравни, выберай!
-                    </p>
-                    <button>Перейти к категориям</button>
-                </div>
-            </div>
-        </section>
-    );
-=======
   return (
     <section id="Hero">
       <div className="container">
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-        <div className="main">
-          <p>1.8 млн товаров в 2272 магазинах найди, сравни, выберай!</p>
-          <button>Перейти к категориям</button>
-<<<<<<< HEAD
-          <NavLink to="differences">сравнение</NavLink>
-=======
-          <NavLink to="products">Группа продуктов</NavLink>
-=======
->>>>>>> 32df4b463af9a71b9736790fe2f3ea75c4b47cfe
         <div className="hero">
           <div className="hero-content">
             <p>
@@ -65,16 +22,10 @@ function Hero() {
             <button>Смотреть</button>
             <img src={phone} alt="" />
           </div>
-<<<<<<< HEAD
-=======
->>>>>>> 97a832c9859067a4aed50110b2f70900bf892416
->>>>>>> e456ef855208a7d48f3c61a0389b80df396aedf1
->>>>>>> 32df4b463af9a71b9736790fe2f3ea75c4b47cfe
         </div>
       </div>
     </section>
   );
->>>>>>> 6de694871a54639ea294f962efc94591b6cc1dda
 }
 
 export default Hero;
