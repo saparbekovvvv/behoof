@@ -1,21 +1,11 @@
-<<<<<<< HEAD
-import { NavLink } from "react-router-dom";
-
-=======
 import "./hero.css";
 import phone from "../../assets/Дизайн без названия (4).png";
 import { NavLink } from "react-router-dom";
->>>>>>> 97a832c9859067a4aed50110b2f70900bf892416
+
 function Hero() {
   return (
     <section id="Hero">
       <div className="container">
-<<<<<<< HEAD
-        <div className="main">
-          <p>1.8 млн товаров в 2272 магазинах найди, сравни, выберай!</p>
-          <button>Перейти к категориям</button>
-          <NavLink to="products">Группа продуктов</NavLink>
-=======
         <div className="hero">
           <div className="hero-content">
             <p>
@@ -33,7 +23,6 @@ function Hero() {
             <button>Смотреть</button>
             <img src={phone} alt="" />
           </div>
->>>>>>> 97a832c9859067a4aed50110b2f70900bf892416
         </div>
       </div>
     </section>
