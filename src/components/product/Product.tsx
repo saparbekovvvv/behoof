@@ -23,6 +23,8 @@ import person6 from "../../assets/person6.png";
 import person7 from "../../assets/person7.png";
 import person9 from "../../assets/person9.png";
 import person8 from "../../assets/person8.png";
+import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
+
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
@@ -30,9 +32,40 @@ import "swiper/css/thumbs";
 import { BsFillRecordCircleFill } from "react-icons/bs";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Navigation, Thumbs } from "swiper/modules";
+import { NavLink } from "react-router-dom";
 
 const Product: React.FC = () => {
+    const [isOpen, setIsOpen] = useState(false);
+    const dropDown = () => {
+        setIsOpen((prev) => !prev);
+    };
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
+    const progress = [
+        {
+            id: 1,
+            title: "Дизайн",
+        },
+        {
+            id: 2,
+            title: "Батарея",
+        },
+        {
+            id: 3,
+            title: "Дисплей",
+        },
+        {
+            id: 4,
+            title: "Камера",
+        },
+        {
+            id: 5,
+            title: "Ответ",
+        },
+        {
+            id: 6,
+            title: "Портативность",
+        },
+    ];
 
     return (
         <section id="Product">
@@ -95,10 +128,136 @@ const Product: React.FC = () => {
                                         Зарядка <span> Безпроводная</span>
                                     </h1>
                                 </div>
-                                <h1 className="type">
-                                    Полный список характеристика{" "}
-                                    <img src={arrow} alt="" />
-                                </h1>
+                                <div className="dropdown">
+                                    <button onClick={dropDown}>
+                                        Полный список характеристика
+                                        {isOpen ? (
+                                            <IoIosArrowUp />
+                                        ) : (
+                                            <IoIosArrowDown />
+                                        )}
+                                    </button>
+                                    <div
+                                        className={
+                                            isOpen
+                                                ? "dropdown-content active"
+                                                : "dropdown-content"
+                                        }
+                                    >
+                                        <h5>Заводские данные</h5>
+                                        <div className="type">
+                                            <h5>Тип</h5>
+                                            <span>Смартфон</span>
+                                        </div>
+                                        <hr />
+                                        <div className="type">
+                                            <h5>Модель</h5>
+                                            <span>Apple Iphone 13</span>
+                                        </div>
+                                        <hr />
+                                        <div className="type">
+                                            <h5>Год резила</h5>
+                                            <span>2021</span>
+                                        </div>
+                                        <hr />
+                                        <br />
+                                        <h4>Экран</h4>
+                                        <div className="type">
+                                            <h5>Диагональ экрана (дюйм)</h5>
+                                            <span> 6.1"</span>
+                                        </div>
+                                        <hr />
+                                        <div className="type">
+                                            <h5>Тип</h5>
+                                            <span> смартфон</span>
+                                        </div>
+                                        <hr />
+                                        <div className="type">
+                                            <h5>Плотность</h5>
+                                            <span> 445 ppi</span>
+                                        </div>
+                                        <hr />
+                                        <div className="type">
+                                            <h5>
+                                                Технология изготовления экрана
+                                            </h5>
+                                            <span> OLED</span>
+                                        </div>
+                                        <hr />
+                                        <div className="type">
+                                            <h5>Количества цветов экрана</h5>
+                                            <span> 16.7 млн</span>
+                                        </div>
+                                        <hr />
+                                        <div className="type">
+                                            <h5>
+                                                Конструктивные особенности
+                                                экрана
+                                            </h5>
+                                            <span>
+                                                {" "}
+                                                безрамочный вырез на экрана
+                                            </span>
+                                        </div>
+                                        <hr />
+                                        <br />
+                                        <h5>Заводские данные</h5>
+                                        <div className="type">
+                                            <h5>Тип</h5>
+                                            <span>Смартфон</span>
+                                        </div>
+                                        <hr />
+                                        <div className="type">
+                                            <h5>Модель</h5>
+                                            <span>Apple Iphone 13</span>
+                                        </div>
+                                        <hr />
+                                        <div className="type">
+                                            <h5>Год резила</h5>
+                                            <span>2021</span>
+                                        </div>
+                                        <br />
+                                        <h4>Экран</h4>
+                                        <div className="type">
+                                            <h5>Диагональ экрана (дюйм)</h5>
+                                            <span> 6.1"</span>
+                                        </div>
+                                        <hr />
+                                        <div className="type">
+                                            <h5>Разрешение</h5>
+                                            <span> 2532x1170</span>
+                                        </div>
+                                        <hr />
+                                        <div className="type">
+                                            <h5>Плотность</h5>
+                                            <span> 445 ppi</span>
+                                        </div>
+                                        <hr />
+                                        <div className="type">
+                                            <h5>
+                                                Технология изготовления экрана
+                                            </h5>
+                                            <span> OLED</span>
+                                        </div>
+                                        <hr />
+                                        <div className="type">
+                                            <h5>Количества цветов экрана</h5>
+                                            <span> 16.7 млн</span>
+                                        </div>
+                                        <hr />
+                                        <div className="type">
+                                            <h5>
+                                                Конструктивные особенности
+                                                экрана
+                                            </h5>
+                                            <span>
+                                                {" "}
+                                                безрамочный вырез на экрана
+                                            </span>
+                                        </div>
+                                        <hr />
+                                    </div>
+                                </div>
                             </div>
                             <div className="titleText">
                                 <h1 className="descrption">Описание</h1>
@@ -148,57 +307,26 @@ const Product: React.FC = () => {
                                         447 отзывов
                                     </h4>
                                 </div>
-                                <h5 className="desing">Дизайн</h5>
-                                <div className="uroven">
-                                    <div className="badgr"></div>
-                                    <div className="badgr"></div>
-                                    <div className="badgr"></div>
-                                    <div className="badgr"></div>
-                                    <div className="bad"></div>
-                                </div>
-                                <h5 className="desing">Батарея</h5>
-                                <div className="uroven">
-                                    <div className="badgr"></div>
-                                    <div className="badgr"></div>
-                                    <div className="bad"></div>
-                                    <div className="bad"></div>
-                                    <div className="bad"></div>
-                                </div>
-                                <h5 className="desing">Дисплей</h5>
-                                <div className="uroven">
-                                    <div className="badgr"></div>
-                                    <div className="badgr"></div>
-                                    <div className="badgr"></div>
-                                    <div className="badgr"></div>
-                                    <div className="bad"></div>
-                                </div>
-                                <h5 className="desing">Камера </h5>
-                                <div className="uroven">
-                                    <div className="badgr"></div>
-                                    <div className="badgr"></div>
-                                    <div className="badgr"></div>
-                                    <div className="badgr"></div>
-                                    <div className="badgr"></div>
-                                </div>
-                                <h5 className="desing">Ответ</h5>
-                                <div className="uroven">
-                                    <div className="badgr"></div>
-                                    <div className="badgr"></div>
-                                    <div className="badgr"></div>
-                                    <div className="badgr"></div>
-                                    <div className="badgr"></div>
-                                </div>
-                                <h5 className="desing">Портативность</h5>
-                                <div className="uroven">
-                                    <div className="badgr"></div>
-                                    <div className="badgr"></div>
-                                    <div className="badgr"></div>
-                                    <div className="badgr"></div>
-                                    <div className="bad"></div>
+
+                                <div className="Type">
+                                    {progress.map((label, idx) => (
+                                        <div key={idx} className="ddd">
+                                            <h4 className="desing">
+                                                {label.title}
+                                            </h4>
+                                            <div className="uroven">
+                                                <div className="badgr"></div>
+                                                <div className="badgr"></div>
+                                                <div className="badgr"></div>
+                                                <div className="badgr"></div>
+                                                <div className="badgr"></div>
+                                            </div>
+                                        </div>
+                                    ))}
                                 </div>
                                 <div className="Crown">
                                     <img src={crown} alt="" />
-                                    <h5>Самый дешевый</h5>
+                                    <h4>Самый дешевый</h4>
                                 </div>
                                 <div className="Price">
                                     <h1>78 999 ₽</h1>
@@ -207,33 +335,31 @@ const Product: React.FC = () => {
                                 <h5 className="dostavka">
                                     Доставка бесплатная
                                 </h5>
+                                <div className="Css">
+                                    <div className="togolok">
+                                        <BsFillRecordCircleFill />
+                                    </div>
+                                </div>
+
                                 <div className="Sena">
                                     <img src={diag} alt="" />
                                     <h5>
-                                        Цена хорошая
-                                        <br />
+                                        Цена хорошая <br />
                                         <span>
                                             Исходя из последних 40 дней, сумма
-                                            составляет близко к среднему
+                                            составляет близко к среднему{" "}
                                         </span>
                                         80 000 ₽
                                     </h5>
                                 </div>
-                                <div className="Css"></div>
-
-                                <BsFillRecordCircleFill className="togolok" />
                                 <div className="Color">
                                     <h4>Цвет:</h4>
                                     <div className="color"></div>
                                     <div className="color2"></div>
-
                                     <div className="color3"></div>
-
                                     <div className="color4"></div>
                                     <div className="color5"></div>
-
                                     <div className="color6"></div>
-
                                     <div className="color7"></div>
                                 </div>
                                 <div className="Pamyat">
@@ -243,13 +369,17 @@ const Product: React.FC = () => {
                                     <button>512 ГБ</button>
                                 </div>
                                 <div className="Sravnenia">
-                                    <button className="btn">
-                                        <img src={chart} alt="" />
-                                        Сравнить
-                                    </button>
-                                    <button className="btn2">
-                                        <img src={heat} alt="" />В избранное
-                                    </button>
+                                    <NavLink to="/differences">
+                                        <button className="btn">
+                                            <img src={chart} alt="" />
+                                            Сравнить
+                                        </button>
+                                    </NavLink>
+                                    <NavLink to="/favorites">
+                                        <button className="btn2">
+                                            <img src={heat} alt="" />В избранное
+                                        </button>
+                                    </NavLink>
                                 </div>
                             </div>
                             <div className="Grafic">
@@ -400,9 +530,10 @@ const Product: React.FC = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="product-card">
+                    {/* <div className="product-card">
                         <Card />
-                    </div>
+                    </div> */}
+                    <br />
                     <h1 className="title">Отзывы</h1>
                     <div className="Komend">
                         <div className="person">
@@ -675,6 +806,7 @@ const Product: React.FC = () => {
                             </h1>
                         </div>
                     </div>
+
                     <div className="Btn">
                         <button>Показать еще</button>
                     </div>
