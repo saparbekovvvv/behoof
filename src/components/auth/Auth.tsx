@@ -3,7 +3,7 @@ import "./auth.css";
 const Auth: React.FC = () => {
     return (
         <div>
-            <main>
+            <main id=" Auth">
                 <div className="container">
                     <div className="register-form-container">
                         <h1 className="form-title">Регистрация</h1>
