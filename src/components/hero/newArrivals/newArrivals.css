@@ -1,0 +1,22 @@
+#NewArrivals {
+  padding: 20px;
+}
+.new-content {
+  padding: 20px;
+  background: #f2f5f9;
+  width: 100%;
+  max-width: 230px;
+  border-radius: 10px;
+}
+.new-content img {
+  width: 160px;
+}
+.new-content {
+  flex-direction: column;
+}
+.newArrivals {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding-top: 20px;
+  gap: 10px;
+}

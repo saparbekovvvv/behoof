@@ -1,11 +1,9 @@
-body {
-    cursor: url("./assets/22.webp"), auto;
-}
 .hero {
     display: flex;
     align-items: start;
     justify-content: center;
     gap: 40px;
+    margin: 50px 0 0;
 }
 h1 span p a .iphone {
     width: 680px;
@@ -53,9 +51,7 @@ h1 span p a .iphone {
     padding: 5px;
     border-radius: 5px;
 }
-span {
-    color: black;
-}
+
 .type {
     display: flex;
     align-items: center;
