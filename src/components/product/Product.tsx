@@ -534,6 +534,7 @@ const Product: React.FC = () => {
                     </div> */}
                     <br />
                     <h1 className="title">Отзывы</h1>
+                    <div className="test"></div>
                     <div className="Komend">
                         <div className="person">
                             <div className="name">

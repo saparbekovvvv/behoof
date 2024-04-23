@@ -985,18 +985,19 @@ span {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
-    padding: 20px 0 0;
-    overflow: scroll;
 }
 .person {
     background: #f2f5f9;
+
     padding: 10px;
     border-radius: 10px;
-    height: fit-content;
     border: 1px solid rgb(219, 216, 216);
 }
 .person h1 {
     font-size: 20px;
+}
+.test1 {
+    display: flex;
 }
 .person span {
     font-size: 18px;
