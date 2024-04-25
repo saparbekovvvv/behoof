@@ -29,13 +29,15 @@ const Res: React.FC = () => {
           </div>
         </div>
 
-        <div className="content">
-          <h1>Упс...</h1>
-          <h3>Страница не найдена</h3>
-          <p>
-            Тут что то упало и это не страшно! <br /> Но мы все сохранили ;
-          </p>
-          <button className="knopka">Перейти на главную</button>
+        <div className="hero">
+          <div className="content">
+            <h1>Упс...</h1>
+            <h3>Страница не найдена</h3>
+            <p>
+              Тут что то упало и это не страшно! <br /> Но мы все сохранили ;
+            </p>
+            <button className="knopka">Перейти на главную</button>
+          </div>
         </div>
       </div>
     </div>

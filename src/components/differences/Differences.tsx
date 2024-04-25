@@ -231,7 +231,7 @@ const Differences: React.FC = () => {
                 </div>
 
                 <div className="model">
-                  <h2>Модель</h2>
+                  <h2>Модель saparbekovvvv._, [25/4/24 12:15]</h2>
                 </div>
                 <div className="ProMax">
                   <h5>Apple iPhone 13 Pro Max</h5>
