@@ -1,0 +1,1101 @@
+.hero {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 40px;
+    margin: 50px 0 0;
+}
+
+.iphone {
+    width: 680px;
+
+    background: rgb(242, 245, 249);
+
+    border-radius: 10px;
+    border: 1px solid rgb(250, 4, 4);
+}
+.iphones {
+    width: 220px;
+    background: rgb(242, 245, 249);
+    border-radius: 10px;
+    margin: 0 0 20px 0;
+    border: 1px solid rgb(245, 7, 7);
+}
+.Phones {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+}
+.characters {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Apple {
+    font-size: 25px;
+    margin: 20px 0 20px;
+}
+.dec {
+    background: rgb(250, 250, 251);
+    padding: 20px;
+    width: 680px;
+    border-radius: 10px;
+    border: 1px solid rgb(209, 208, 208);
+}
+.camera,
+.system,
+.diog,
+.charge {
+    font-size: 15px;
+    background: rgb(234, 234, 234);
+    color: rgb(126, 135, 148);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.type {
+    display: flex;
+    align-items: center;
+    margin: 20px 0 0 0;
+    font-size: 20px;
+    color: red;
+}
+.titleText {
+    background: rgb(252, 252, 253);
+    padding: 20px;
+    margin: 40px 0 0 0;
+    width: 680px;
+    border: 1px solid rgb(209, 208, 208);
+    border-radius: 10px;
+}
+.descrption {
+    margin: 0 0 20px 0;
+}
+@media screen and (max-width: 1400px) {
+    .Phone {
+        width: 440px;
+    }
+    .iphone {
+        width: 460px;
+    }
+    .iphones {
+        width: 145px;
+    }
+    .dec,
+    .titleText {
+        width: 460px;
+    }
+    .Apple,
+    .descrption {
+        font-size: 15px;
+        width: auto;
+    }
+    .type,
+    .desck {
+        font-size: 15px;
+    }
+    .characters {
+        display: flex;
+        justify-content: start;
+        gap: 6px;
+    }
+    .system,
+    .camera,
+    .charge,
+    .diog {
+        font-size: 9px;
+        width: auto;
+    }
+}
+@media screen and (max-width: 1023px) {
+    .Phone {
+        width: 340px;
+    }
+    .iphone {
+        width: 360px;
+    }
+    .iphones {
+        width: 113px;
+    }
+    .dec,
+    .titleText {
+        width: 360px;
+    }
+    .Apple,
+    .descrption {
+        font-size: 15px;
+        width: auto;
+    }
+    .type,
+    .desck {
+        font-size: 15px;
+    }
+    .characters {
+        display: flex;
+        justify-content: start;
+        gap: 6px;
+    }
+    .system,
+    .camera,
+    .charge,
+    .diog {
+        font-size: 9px;
+        width: auto;
+    }
+}
+@media screen and (max-width: 767px) {
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .Phone {
+        width: 380px;
+    }
+    .iphone {
+        width: 380px;
+    }
+    .iphones {
+        width: 120px;
+    }
+    .dec,
+    .titleText {
+        width: 380px;
+    }
+    .Apple,
+    .descrption {
+        font-size: 15px;
+        width: auto;
+    }
+    .type,
+    .desck {
+        font-size: 15px;
+    }
+    .characters {
+        display: flex;
+        justify-content: start;
+        gap: 6px;
+    }
+    .system,
+    .camera,
+    .charge,
+    .diog {
+        font-size: 9px;
+        width: auto;
+    }
+}
+@media screen and (max-width: 423px) {
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .Phone {
+        width: 355px;
+        padding: 0 0 0 1px;
+    }
+    .iphone {
+        width: 340px;
+    }
+    .iphones {
+        width: 107px;
+    }
+    .dec,
+    .titleText {
+        width: 340px;
+    }
+    .Apple,
+    .descrption {
+        font-size: 16px;
+        width: auto;
+    }
+    .type,
+    .desck {
+        font-size: 15px;
+    }
+    .characters {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .system,
+    .camera,
+    .charge,
+    .diog {
+        font-size: 13px;
+        width: auto;
+    }
+}
+@media screen and (max-width: 320px) {
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .Phone {
+        width: 300px;
+        padding: 0 0 0 1px;
+    }
+    .iphone {
+        width: 300px;
+    }
+    .iphones {
+        display: none;
+    }
+    .dec,
+    .titleText {
+        width: 300px;
+    }
+    .Apple,
+    .descrption {
+        font-size: 16px;
+        width: auto;
+    }
+    .type,
+    .desck {
+        font-size: 10px;
+    }
+    .characters {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .system,
+    .camera,
+    .charge,
+    .diog {
+        font-size: 13px;
+        width: auto;
+    }
+}
+
+.Store_component {
+    border: 1px solid #d9d8d8;
+    padding: 20px;
+    max-width: 680px;
+    border-radius: 10px;
+}
+.component_text {
+    font-size: 25px;
+}
+.Apple_star {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 10px 0 0;
+}
+.Apple_star h5 {
+    font-size: 20px;
+    color: greenyellow;
+    background: #f6f7fa;
+    padding: 10px;
+    border-radius: 10px;
+}
+.othv {
+    color: rgb(175, 174, 174);
+    font-size: 20px;
+    background: #f6f7fa;
+    padding: 10px;
+    border-radius: 10px;
+}
+.othv span {
+    color: red;
+}
+.Type {
+    padding: 20px 0 0;
+}
+.desing {
+    font-size: 15px;
+    color: gray;
+    padding: 10px 0;
+}
+.uroven {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.dropdown button {
+    padding: 20px 0 20px;
+    border: none;
+    color: red;
+    background: white;
+}
+.type {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.type h5 {
+    color: gray;
+}
+.type span {
+    font-size: 15px;
+    font-weight: 600;
+}
+.dropdown-content {
+    visibility: hidden;
+    height: 20px;
+}
+.dropdown-content.active {
+    visibility: visible;
+    height: 920px;
+}
+.badgr {
+    background: red;
+    width: 120px;
+    height: 5px;
+    border-radius: 10px;
+}
+.bad {
+    background: gainsboro;
+    width: 130px;
+    height: 5px;
+    border-radius: 10px;
+}
+.Crown {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 30px 0 10px;
+}
+.Price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 10px;
+}
+.Price img {
+    width: 100px;
+}
+.dostavka {
+    color: rgb(5, 246, 106);
+    margin: 0;
+    padding: 0 0 20px;
+}
+.Sena {
+    display: flex;
+
+    align-items: center;
+    gap: 10px;
+    padding: 30px 0 20px;
+}
+.Sena img {
+    width: 40px;
+    background: #f6f7fa;
+    padding: 5px;
+    border-radius: 40%;
+}
+.Sena span {
+    color: gray;
+}
+.csd {
+    position: relative;
+}
+.Css {
+    width: 640px;
+
+    height: 5px;
+    background-image: linear-gradient(90deg, #d13030, #ffffff, #30d170);
+    border-radius: 10px;
+}
+.togolok {
+    position: absolute;
+    top: 1;
+    right: 31%;
+    font-size: 10px;
+}
+.uroven {
+    display: flex;
+    flex-wrap: wrap;
+}
+.Color {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0 0;
+}
+.color {
+    width: 25px;
+    height: 25px;
+    background: #fdfdfd;
+    border: 4px solid rgb(231, 228, 228);
+    border-radius: 5px;
+}
+.color2 {
+    width: 25px;
+    height: 25px;
+    background: #ffe0bb;
+    border: 4px solid rgb(231, 228, 228);
+    border-radius: 5px;
+}
+.color3 {
+    width: 25px;
+    height: 25px;
+    background: #ffbbbb;
+    border: 4px solid rgb(231, 228, 228);
+    border-radius: 5px;
+}
+.color4 {
+    width: 25px;
+    height: 25px;
+    background: #6c6c6c;
+    border: 4px solid rgb(231, 228, 228);
+    border-radius: 5px;
+}
+.color5 {
+    width: 25px;
+    height: 25px;
+    background: #bbffe2;
+    border: 4px solid rgb(231, 228, 228);
+    border-radius: 5px;
+}
+.color6 {
+    width: 25px;
+    height: 25px;
+    background: #bbc2ff;
+    border: 4px solid rgb(231, 228, 228);
+    border-radius: 5px;
+}
+.color7 {
+    width: 25px;
+    height: 25px;
+    background: #febbff;
+    border: 4px solid rgb(231, 228, 228);
+    border-radius: 5px;
+}
+.color:hover,
+.color2:hover,
+.color3:hover,
+.color4:hover,
+.color5:hover,
+.color6:hover,
+.color7:hover {
+    border: 3px solid rgb(255, 8, 0);
+}
+.Pamyat {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 0 0;
+}
+.Pamyat button {
+    color: gray;
+    padding: 3px 10px;
+    border: 2px solid #d0cfd0;
+    border-radius: 7px;
+}
+.Pamyat button:hover {
+    border: 2px solid #d13030;
+}
+.Pamyat button:active {
+    background: #d13030;
+    color: #fff;
+    border: 2px solid #febbff;
+}
+.Sravnenia {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 20px 0 0;
+}
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px;
+    border: none;
+    border-radius: 5px;
+    background: red;
+    color: white;
+}
+.btn2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    background: rgb(253, 228, 228);
+    color: red;
+    border: none;
+    border-radius: 5px;
+}
+.Month {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+.Grafic img {
+    max-width: 650px;
+}
+.Grafic {
+    border: 1px solid #d3d4d4;
+    padding: 20px;
+    max-width: 680px;
+    border-radius: 10px;
+    margin: 10px 0 0;
+}
+.Uroven_grafic {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.histori {
+    max-width: 330px;
+    border: 1px solid #d9d9db;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0 0;
+}
+.histori h6 {
+    color: rgb(47, 255, 144);
+}
+.histori h5 {
+    color: gray;
+    font-size: 12px;
+}
+.Shop h6 {
+    color: red;
+}
+.hs_price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 10px;
+}
+.hs_price img {
+    width: 80px;
+}
+.chart1,
+.chart2 {
+    width: 320px;
+    padding: 10px 0 0;
+}
+.Shop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 0;
+}
+
+@media screen and (max-width: 1400px) {
+    .Store {
+        width: 500px;
+    }
+    .Store_component {
+        width: 500px;
+    }
+    .Apple_star h5,
+    .othv {
+        font-size: 14px;
+    }
+    .badgr {
+        width: 87px;
+    }
+    .Css {
+        width: 460px;
+    }
+    .Sena h5 {
+        font-size: 15px;
+    }
+    .Grafic {
+        width: 500px;
+    }
+    .Grafic img {
+        width: 460px;
+    }
+    .Month {
+        display: flex;
+        gap: 10px;
+        font-size: 18px;
+    }
+    .histori {
+        width: 240px;
+    }
+    .chart1,
+    .chart2 {
+        width: 220px;
+    }
+}
+@media screen and (max-width: 1023px) {
+    .Store {
+        width: 380px;
+    }
+    .Store_component {
+        width: 355px;
+    }
+    .Apple_star h5,
+    .othv {
+        font-size: 10px;
+    }
+    .badgr {
+        width: 58px;
+    }
+    .desing {
+        font-size: 10px;
+    }
+
+    .uroven {
+        height: 1px;
+    }
+    .Css {
+        width: 315px;
+    }
+    .Pamyat button {
+        font-size: 10px;
+    }
+    .Pamyat h4 {
+        font-size: 15px;
+    }
+    .Sena span {
+        font-size: 10px;
+    }
+    .Color h4 {
+        font-size: 15px;
+    }
+    .color {
+        width: 15px;
+        height: 15px;
+    }
+    .btn img,
+    .btn2 img {
+        width: 15px;
+    }
+    .btn2 img {
+        width: 18px;
+    }
+    .btn,
+    .btn2 {
+        font-size: 10px;
+        padding: 8px;
+    }
+    .Uroven_grafic {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .Sena h5 {
+        font-size: 15px;
+    }
+    .Grafic {
+        width: 355px;
+    }
+    .Grafic img {
+        width: 315px;
+    }
+    .Month {
+        display: flex;
+        gap: 10px;
+        font-size: 10px;
+    }
+    .histori {
+        width: 385px;
+    }
+    .chart1,
+    .chart2 {
+        width: 320px;
+    }
+    .hs_price img {
+        width: 80px;
+    }
+    .hs_price h4 {
+        font-size: 25px;
+    }
+    .hs_price h5 {
+        font-size: 4px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .Store {
+        width: 380px;
+    }
+    .Store_component {
+        width: 380px;
+    }
+    .Apple_star h5,
+    .othv {
+        font-size: 10px;
+    }
+    .badgr {
+        width: 63px;
+    }
+    .desing {
+        font-size: 10px;
+    }
+
+    .uroven {
+        height: 1px;
+    }
+    .Css {
+        width: 315px;
+    }
+    .Pamyat button {
+        font-size: 10px;
+    }
+    .Pamyat h4 {
+        font-size: 15px;
+    }
+    .Sena span {
+        font-size: 10px;
+    }
+    .Color h4 {
+        font-size: 15px;
+    }
+    .color {
+        width: 15px;
+        height: 15px;
+    }
+    .btn img,
+    .btn2 img {
+        width: 15px;
+    }
+    .btn2 img {
+        width: 18px;
+    }
+    .btn,
+    .btn2 {
+        font-size: 10px;
+        padding: 8px;
+    }
+    .Uroven_grafic {
+        display: flex;
+        overflow-y: scroll;
+    }
+    .Sena h5 {
+        font-size: 15px;
+    }
+    .Grafic h5 {
+        font-size: 10px;
+    }
+    .Grafic {
+        width: 380px;
+    }
+    .Grafic img {
+        width: 340px;
+    }
+    .Month {
+        display: flex;
+        gap: 10px;
+        font-size: 10px;
+    }
+    .histori {
+        width: 345px;
+    }
+    .chart1,
+    .chart2 {
+        width: 320px;
+    }
+    .hs_price img {
+        width: 80px;
+    }
+    .hs_price h4 {
+        font-size: 25px;
+    }
+    .hs_price h5 {
+        font-size: 4px;
+    }
+}
+@media screen and (max-width: 423px) {
+    .Store {
+        width: 340px;
+    }
+    .Store_component {
+        width: 340px;
+    }
+    .Apple_star h5,
+    .othv {
+        font-size: 8px;
+    }
+    .badgr {
+        width: 55px;
+    }
+    .desing {
+        font-size: 10px;
+    }
+
+    .uroven {
+        height: 1px;
+    }
+    .Css {
+        width: 300px;
+    }
+    .Pamyat button {
+        font-size: 10px;
+    }
+    .Pamyat h4 {
+        font-size: 15px;
+    }
+    .Sena span {
+        font-size: 10px;
+    }
+    .Color h4 {
+        font-size: 15px;
+    }
+    .color {
+        width: 10px;
+        height: 10px;
+    }
+    .btn img,
+    .btn2 img {
+        width: 15px;
+    }
+    .btn2 img {
+        width: 18px;
+    }
+    .btn,
+    .btn2 {
+        font-size: 10px;
+        padding: 8px;
+    }
+    .Uroven_grafic {
+        display: flex;
+        overflow-y: scroll;
+    }
+    .Sena h5 {
+        font-size: 15px;
+    }
+    .Grafic h5 {
+        font-size: 10px;
+    }
+    .Grafic {
+        width: 340px;
+    }
+    .Grafic img {
+        width: 300px;
+    }
+    .Month {
+        display: flex;
+        gap: 10px;
+        font-size: 10px;
+    }
+    .histori {
+        width: 385px;
+    }
+    .chart1,
+    .chart2 {
+        width: 320px;
+    }
+    .hs_price img {
+        width: 80px;
+    }
+    .hs_price h4 {
+        font-size: 25px;
+    }
+    .hs_price h5 {
+        font-size: 4px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .Store {
+        width: 300px;
+    }
+    .Store_component {
+        width: 300px;
+    }
+    .Apple_star h5,
+    .othv {
+        font-size: 8px;
+    }
+    .badgr {
+        width: 45px;
+    }
+    .desing {
+        font-size: 10px;
+    }
+
+    .uroven {
+        height: 1px;
+    }
+    .Css {
+        width: 250px;
+    }
+    .Pamyat {
+        display: flex;
+        gap: 10px;
+    }
+    .Pamyat button {
+        font-size: 10px;
+    }
+    .Pamyat h4 {
+        font-size: 15px;
+    }
+    .Sena span {
+        font-size: 10px;
+    }
+    .Color {
+        display: flex;
+        gap: 8px;
+        font-size: 15px;
+    }
+    .color {
+        width: 15px;
+        height: 15px;
+    }
+    .btn img,
+    .btn2 img {
+        width: 15px;
+    }
+    .btn2 img {
+        width: 18px;
+    }
+    .btn,
+    .btn2 {
+        font-size: 10px;
+        padding: 8px;
+    }
+    .Uroven_grafic {
+        display: flex;
+        overflow-y: scroll;
+    }
+    .Sena h5 {
+        font-size: 15px;
+    }
+    .Grafic h5 {
+        font-size: 10px;
+    }
+    .Grafic {
+        width: 300px;
+    }
+    .Grafic img {
+        width: 260px;
+    }
+    .Month {
+        display: flex;
+        gap: 1px;
+        font-size: 2px;
+    }
+    .histori {
+        width: 385px;
+    }
+    .chart1,
+    .chart2 {
+        width: 320px;
+    }
+    .hs_price img {
+        width: 80px;
+    }
+    .hs_price h4 {
+        font-size: 25px;
+    }
+    .hs_price h5 {
+        font-size: 4px;
+    }
+}
+.Komend {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px 0 0;
+    overflow: scroll;
+}
+.person {
+    background: #f2f5f9;
+    padding: 10px;
+    border-radius: 10px;
+    height: fit-content;
+    border: 1px solid rgb(219, 216, 216);
+}
+.person h1 {
+    font-size: 20px;
+}
+.person span {
+    font-size: 18px;
+    color: gray;
+}
+.name {
+    display: flex;
+    align-items: start;
+    gap: 20px;
+    padding: 0 0 20px;
+}
+.name img {
+    width: 50px;
+    border-radius: 50%;
+}
+.name span {
+    color: red;
+}
+.Btn {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 80px;
+}
+.Btn button {
+    background: #f2f5f9;
+    color: red;
+    padding: 20px 10px;
+    border-radius: 10px;
+    border: none;
+}
+@media screen and (max-width: 1024px) {
+    .Komend {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 425px) {
+    .Komend {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
+}
+
+.mySwiper2 {
+    height: 50%;
+    width: 100%;
+}
+
+.mySwiper {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+.mySwiper .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

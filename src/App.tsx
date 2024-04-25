@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { getDatabase, push, ref, set } from "firebase/database";
 import "./App.css";
 import Footer from "./components/footer/Footer";
@@ -52,6 +53,21 @@ function App() {
       <Footer />
     </div>
   );
+=======
+import "./App.css";
+import Header from "./components/header/Header";
+import Footer from "./components/footer/Footer";
+import MainRoutes from "./routes/MainRoutes";
+
+function App() {
+    return (
+        <div>
+            <Header />
+            <MainRoutes />
+            <Footer />
+        </div>
+    );
+>>>>>>> develop
 }
 
 export default App;

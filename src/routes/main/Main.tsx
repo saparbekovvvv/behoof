@@ -7,7 +7,7 @@ import Canvas from "../../components/hero/canvas/Canvas";
 import NewArrivals from "../../components/hero/newArrivals/NewArrivals";
 
 const Main: React.FC = () => {
-  return (
+    return (
     <>
       <Hero />
       <BestChoice />
