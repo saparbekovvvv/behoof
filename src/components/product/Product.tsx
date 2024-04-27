@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import "./product.css";
-import iphone from "../../assets/172.webp";
+import iphone from "../../assets/iphone-blue.webp";
+import iphone2 from "../../assets/iphone-green.webp";
+import iphone3 from "../../assets/iphone-red.webp";
+import iphone4 from "../../assets/iphone-midnight.webp";
+import iphone5 from "../../assets/iphone-.webp";
+import iphone6 from "../../assets/iphone-13--pink.webp";
 import { FaStar } from "react-icons/fa6";
 import re from "../../assets/20.jpg";
 import diag from "../../assets/diag.svg";
@@ -28,10 +33,11 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
-import { BsFillRecordCircleFill } from "react-icons/bs";
+// import { BsFillRecordCircleFill } from "react-icons/bs";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Navigation, Thumbs } from "swiper/modules";
 import { NavLink } from "react-router-dom";
+import { BsFillRecordCircleFill } from "react-icons/bs";
 
 const Product: React.FC = () => {
   const dropDown = () => {
@@ -85,10 +91,19 @@ const Product: React.FC = () => {
                     <img src={iphone} />
                   </SwiperSlide>
                   <SwiperSlide>
-                    <img src={iphone} />
+                    <img src={iphone2} />
                   </SwiperSlide>
                   <SwiperSlide>
-                    <img src={iphone} />
+                    <img src={iphone3} />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <img src={iphone4} />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <img src={iphone5} />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <img src={iphone6} />
                   </SwiperSlide>
                 </Swiper>
                 <Swiper

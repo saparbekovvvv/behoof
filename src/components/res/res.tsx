@@ -1,8 +1,9 @@
 import React from "react";
-import "../store/res.css";
 import { AiOutlineExclamation } from "react-icons/ai";
 import { AiOutlineClose } from "react-icons/ai";
 import { AiOutlineCheck } from "react-icons/ai";
+import "./res.css";
+import { NavLink } from "react-router-dom";
 
 const Res: React.FC = () => {
   return (
@@ -29,13 +30,17 @@ const Res: React.FC = () => {
           </div>
         </div>
 
-        <div className="content">
-          <h1>Упс...</h1>
-          <h3>Страница не найдена</h3>
-          <p>
-            Тут что то упало и это не страшно! <br /> Но мы все сохранили ;
-          </p>
-          <button className="knopka">Перейти на главную</button>
+        <div className="hero">
+          <div className="content">
+            <h1>Упс...</h1>
+            <h3>Страница не найдена</h3>
+            <p>
+              Тут что то упало и это не страшно! <br /> Но мы все сохранили ;
+            </p>
+            <NavLink to="/">
+              <button className="knopka">Перейти на главную</button>
+            </NavLink>
+          </div>
         </div>
       </div>
     </div>

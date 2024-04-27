@@ -5,8 +5,7 @@
     gap: 40px;
     margin: 50px 0 0;
 }
-
-.iphone {
+.iphone h1 span p a {
     width: 680px;
 
     background: rgb(242, 245, 249);
@@ -31,8 +30,8 @@
     align-items: center;
     justify-content: space-between;
 }
-.Apple {
-    font-size: 25px;
+.dec h2 {
+    font-size: 35px;
     margin: 20px 0 20px;
 }
 .dec {
@@ -51,6 +50,10 @@
     color: rgb(126, 135, 148);
     padding: 5px;
     border-radius: 5px;
+}
+.characters span {
+    font-size: 10px;
+    color: black;
 }
 
 .type {
@@ -85,7 +88,7 @@
     .titleText {
         width: 460px;
     }
-    .Apple,
+    .dec h2,
     .descrption {
         font-size: 15px;
         width: auto;
@@ -143,10 +146,10 @@
         width: auto;
     }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .hero {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 10px;
     }
     .Phone {
@@ -184,25 +187,26 @@
         width: auto;
     }
 }
-@media screen and (max-width: 423px) {
+@media screen and (max-width: 425px) {
     .hero {
         display: grid;
         grid-template-columns: 1fr;
         gap: 10px;
     }
     .Phone {
-        width: 355px;
+        width: 350px;
         padding: 0 0 0 1px;
     }
+
     .iphone {
-        width: 340px;
+        width: 310px;
     }
     .iphones {
         width: 107px;
     }
     .dec,
     .titleText {
-        width: 340px;
+        width: 380px;
     }
     .Apple,
     .descrption {
@@ -296,8 +300,9 @@
     padding: 10px;
     border-radius: 10px;
 }
-.othv span {
+.Apple_star span {
     color: red;
+    font-size: 18px;
 }
 .Type {
     padding: 20px 0 0;
@@ -322,13 +327,24 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 0;
 }
 .type h5 {
     color: gray;
+    font-size: 15px;
 }
 .type span {
     font-size: 15px;
     font-weight: 600;
+    color: black;
+}
+.dd {
+    visibility: hidden;
+    height: 20px;
+}
+.dd.actived {
+    visibility: visible;
+    height: 100%;
 }
 .dropdown-content {
     visibility: hidden;
@@ -336,7 +352,7 @@
 }
 .dropdown-content.active {
     visibility: visible;
-    height: 920px;
+    height: 100%;
 }
 .badgr {
     background: red;
@@ -385,17 +401,18 @@
 }
 .Sena span {
     color: gray;
+    font-size: 15px;
 }
 .csd {
     position: relative;
 }
-.Css {
+/* .Css {
     width: 640px;
 
     height: 5px;
     background-image: linear-gradient(90deg, #d13030, #ffffff, #30d170);
     border-radius: 10px;
-}
+} */
 .togolok {
     position: absolute;
     top: 1;
@@ -496,25 +513,21 @@
     gap: 40px;
     padding: 20px 0 0;
 }
-.btn {
+.Sravnenia button {
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 13px;
+    padding: 10px;
+    background: rgb(253, 2, 2);
+    color: rgb(248, 246, 246);
     border: none;
     border-radius: 5px;
-    background: red;
-    color: white;
 }
+
 .btn2 {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 15px;
-    background: rgb(253, 228, 228);
-    color: red;
-    border: none;
-    border-radius: 5px;
+    color: rgb(254, 2, 2) !important;
+    background: rgb(252, 226, 226) !important;
+    height: 45px;
 }
 .Month {
     display: flex;
@@ -555,6 +568,25 @@
 .Shop h6 {
     color: red;
 }
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+
+    padding: 4px;
+    border-radius: 10px;
+    background-image: linear-gradient(
+        to right,
+        red,
+        pink,
+        white,
+        rgb(87, 249, 147),
+        green
+    );
+    width: 630px;
+    height: 1px;
+    cursor: pointer;
+}
+
 .hs_price {
     display: flex;
     align-items: center;
@@ -564,6 +596,7 @@
 .hs_price img {
     width: 80px;
 }
+
 .chart1,
 .chart2 {
     width: 320px;
@@ -590,7 +623,7 @@
     .badgr {
         width: 87px;
     }
-    .Css {
+    .Css input {
         width: 460px;
     }
     .Sena h5 {
@@ -626,6 +659,9 @@
     .othv {
         font-size: 10px;
     }
+    .Apple_star span {
+        font-size: 10px;
+    }
     .badgr {
         width: 58px;
     }
@@ -636,7 +672,7 @@
     .uroven {
         height: 1px;
     }
-    .Css {
+    .Css input {
         width: 315px;
     }
     .Pamyat button {
@@ -928,8 +964,11 @@
         width: 15px;
         height: 15px;
     }
-    .btn img,
-    .btn2 img {
+    .Sravnenia button {
+        font-size: 10px;
+        padding: 10px;
+    }
+    img {
         width: 15px;
     }
     .btn2 img {
@@ -982,18 +1021,19 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
-    padding: 20px 0 0;
-    overflow: scroll;
 }
 .person {
     background: #f2f5f9;
+
     padding: 10px;
     border-radius: 10px;
-    height: fit-content;
     border: 1px solid rgb(219, 216, 216);
 }
 .person h1 {
     font-size: 20px;
+}
+.test1 {
+    display: flex;
 }
 .person span {
     font-size: 18px;
@@ -1098,4 +1138,12 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.person {
+}
+.person.active {
+    visibility: visible;
+}
+.dropDawn {
+    display: none;
 }
