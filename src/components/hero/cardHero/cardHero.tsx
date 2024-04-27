@@ -3,6 +3,10 @@ import "./cardHero.css";
 import { IoIosHeart } from "react-icons/io";
 
 import { IoIosStats } from "react-icons/io";
+<<<<<<< HEAD
+=======
+import "swiper/css";
+>>>>>>> 6b7bd4bc4f7cf4a92d01a245add6feaf46e06cff
 import "swiper/css/navigation";
 import img from "../../../assets/2272131 1.png";
 import { NavLink } from "react-router-dom";

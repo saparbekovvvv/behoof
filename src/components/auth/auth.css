@@ -1,113 +1,77 @@
-.register-form-container input {
-    height: 45px;
-    width: 100%;
-    color: #060606;
-    font-size: 14px;
-    line-height: 16px;
-    border: 2px solid #e9f2ff;
-    border-radius: 5px;
-    padding-left: 25px;
-}
-.register-form-container input:focus {
-    outline: none;
-    border: 2px solid #c1d9fd;
-}
 main {
-    background: rgb(242, 245, 249);
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 80px;
+}
+.from-title span {
+    color: #4f2fda;
 }
 
-.form-title {
-    color: #30507d;
-    font-style: 500;
-    font-size: 20px;
-    line-height: 23px;
-    margin-bottom: 38px;
-}
-.register-form-container {
-    opacity: 0;
-    z-index: 2;
-    width: 100%;
-    max-width: 415px;
-    background: #ffffff;
-    box-shadow: 0px 6px 500px rgba(217, 229, 255, 0.7);
-    border-radius: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 38px;
-    padding-bottom: 38px;
-    animation-name: fadeForm;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-@keyframes fadeForm {
-    0% {
-        opacity: 0;
-    }
-    25% {
-        opacity: 0.25;
-    }
-    50% {
-        opacity: 0.5;
-    }
-    75% {
-        opacity: 0.75;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-.form-field {
-    margin-bottom: 14px;
-}
-.form-buttons {
-    display: grid;
+.from-first {
+    display: flex;
     align-items: center;
+    gap: 100px;
+}
+.from-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 .button {
-    font-weight: bold;
-    font-size: 14px;
-    display: block;
-    width: 360px;
-    height: 45px;
-    background: black;
-    border-radius: 5px;
-    color: #fff;
-    text-transform: uppercase;
-    text-align: center;
-    line-height: 45px;
-    cursor: pointer;
-    border: none;
+    border-radius: 15px;
+    padding: 7px 25px;
+    background: none;
+    border: 2px solid;
+    color: rgb(68, 68, 211);
 }
 
-.button:hover {
-    background-color: black;
-}
-a.button {
-    text-decoration: none;
+.form-buttons {
+    padding-top: 30px;
 }
 
-.button-google {
-    color: #c6cfdc;
-    background: #f2f6ff;
+.form-hr span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
 }
-.button-google {
-    background: #e2e6f0;
-    color: #fff;
+
+.hr1 {
+    transform: rotate(90deg);
+    width: 70px;
+    margin-top: 10px;
 }
-.divider {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
-    color: #405d87;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    text-align: center;
+.form-hr {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 40px;
+}
+
+.google {
+    display: flex;
+    border: 2px solid #340aed;
+}
+.form-google-text {
+    background: blue;
+    color: #ffff;
+    padding: 5px 30px;
+}
+.form-google-icon {
+    background: white;
+    padding: 5px;
+}
+@media screen and (max-width: 600px) {
+    .from-first {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .hr1 {
+        display: none;
+    }
 }
