@@ -1,54 +1,11 @@
-<<<<<<< HEAD
-import React from "react";
-=======
-<<<<<<< HEAD
-import React from "react";
-=======
 import React, { useState } from "react";
->>>>>>> 6de694871a54639ea294f962efc94591b6cc1dda
->>>>>>> e456ef855208a7d48f3c61a0389b80df396aedf1
 import logo from "../../assets/path0.png";
 import { NavLink } from "react-router-dom";
 import { CiHeart } from "react-icons/ci";
 import { IoStatsChartOutline } from "react-icons/io5";
 import { BsPerson } from "react-icons/bs";
-<<<<<<< HEAD
-import "./Header.css";
-=======
->>>>>>> e456ef855208a7d48f3c61a0389b80df396aedf1
 
 const Header: React.FC = () => {
-<<<<<<< HEAD
-    return (
-        <header id="Header" className=" bg-black">
-            <div className="container">
-                <div className="header">
-                    <div className="header-content">
-                        <img className="logo" src={logo} alt="" />
-                        <NavLink to="/">Behoof</NavLink>
-                        <p>
-                            Лучшие цены <br />в интернет-магазинах{" "}
-                        </p>
-                    </div>
-
-                    <div className="catalog">
-                        <button>Каталог товаров</button>
-                        <input type="text" placeholder="Поиск товаров" />
-
-                        <div className="nav">
-                            <NavLink to="/favorite">
-                                <CiHeart />
-                            </NavLink>
-                            <NavLink to="/differences">
-                                <IoStatsChartOutline />
-                            </NavLink>
-                            <NavLink to="/auth">
-                                <BsPerson />
-                            </NavLink>
-                        </div>
-                    </div>
-                </div>
-=======
   const [isDropdown, setIsDropdown] = useState(false);
   const dropDown = () => {
     setIsDropdown((prev) => !prev);
@@ -58,36 +15,13 @@ const Header: React.FC = () => {
       <div className="container">
         <div className="header">
           <div className="header-content">
-            <img
-              className="logo"
-              src={logo}
-              alt=""
-            />
+            <img className="logo" src={logo} alt="" />
             <NavLink to="/">Behoof</NavLink>
-            <p>Лучшие цены <br />
-в интернет-магазинах </p>
+            <p>
+              Лучшие цены <br />в интернет-магазинах{" "}
+            </p>
           </div>
-
           <div className="catalog">
-<<<<<<< HEAD
-            <button className="header-btn">Каталог товаров</button>
-
-            <div className="catolog-input">
-              <input type="text" placeholder="Поиск товаров" />
-            </div>
-
-            <div className="nav">
-              <div className="nav-links">
-                <NavLink to="/favorite">
-                  <CiHeart />
-                </NavLink>
-                <NavLink to="/favorite">
-                  <IoStatsChartOutline />
-                </NavLink>
-                <NavLink to="/favorite">
-                  <BsPerson />
-                </NavLink>
-=======
             <button onClick={dropDown}>Каталог товаров</button>
             <div
               className={isDropdown ? "dropdown-menu active" : "dropdown-menu"}
@@ -110,7 +44,6 @@ const Header: React.FC = () => {
                     <li>Аксесуары</li>
                   </ul>
                 </div>
->>>>>>> e456ef855208a7d48f3c61a0389b80df396aedf1
               </div>
             </div>
             <input type="text" placeholder="Поиск товаров" />
@@ -119,16 +52,18 @@ const Header: React.FC = () => {
               <NavLink to="/favorite">
                 <CiHeart />
               </NavLink>
-              <NavLink to="/favorite">
+              <NavLink to="/product">
                 <IoStatsChartOutline />
               </NavLink>
               <NavLink to="/favorite">
                 <BsPerson />
               </NavLink>
->>>>>>> 6de694871a54639ea294f962efc94591b6cc1dda
             </div>
-        </header>
-    );
+          </div>
+        </div>
+      </div>
+    </header>
+  );
 };
 
 export default Header;
