@@ -56,10 +56,10 @@ const Header: React.FC = () => {
                             <NavLink to="/favorite">
                                 <CiHeart />
                             </NavLink>
-                            <NavLink to="/differences">
+                            <NavLink to="/product">
                                 <IoStatsChartOutline />
                             </NavLink>
-                            <NavLink to="/auth">
+                            <NavLink to="/favorite">
                                 <BsPerson />
                             </NavLink>
                         </div>

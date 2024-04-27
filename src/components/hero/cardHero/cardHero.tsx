@@ -4,10 +4,13 @@ import { IoIosHeart } from "react-icons/io";
 
 import { IoIosStats } from "react-icons/io";
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 import "swiper/css";
 >>>>>>> 6b7bd4bc4f7cf4a92d01a245add6feaf46e06cff
 import "swiper/css/navigation";
+=======
+>>>>>>> 7e0de1e203051d470d1e84f265a9a2f21b0ae4e6
 import img from "../../../assets/2272131 1.png";
 import { NavLink } from "react-router-dom";
 
