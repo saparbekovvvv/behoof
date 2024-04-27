@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import "./product.css";
-import iphone from "../../assets/172.webp";
+import iphone from "../../assets/iphone-blue.webp";
+import iphone2 from "../../assets/iphone-green.webp";
+import iphone3 from "../../assets/iphone-red.webp";
+import iphone4 from "../../assets/iphone-midnight.webp";
+import iphone5 from "../../assets/iphone-.webp";
+import iphone6 from "../../assets/iphone-13--pink.webp";
 import { FaStar } from "react-icons/fa6";
 import re from "../../assets/20.jpg";
 import diag from "../../assets/diag.svg";
@@ -28,13 +33,14 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
-import { BsFillRecordCircleFill } from "react-icons/bs";
+// import { BsFillRecordCircleFill } from "react-icons/bs";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Navigation, Thumbs } from "swiper/modules";
 import { NavLink } from "react-router-dom";
 
 const Product: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
+
     const dropDown = () => {
         setIsOpen((prev) => !prev);
     };
@@ -65,7 +71,6 @@ const Product: React.FC = () => {
             title: "Портативность",
         },
     ];
-
     return (
         <section id="Product">
             <div className="container">
@@ -84,10 +89,19 @@ const Product: React.FC = () => {
                                         <img src={iphone} />
                                     </SwiperSlide>
                                     <SwiperSlide>
-                                        <img src={iphone} />
+                                        <img src={iphone2} />
                                     </SwiperSlide>
                                     <SwiperSlide>
-                                        <img src={iphone} />
+                                        <img src={iphone3} />
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <img src={iphone4} />
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <img src={iphone5} />
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <img src={iphone6} />
                                     </SwiperSlide>
                                 </Swiper>
                                 <Swiper
@@ -103,16 +117,25 @@ const Product: React.FC = () => {
                                         <img src={iphone} />
                                     </SwiperSlide>
                                     <SwiperSlide>
-                                        <img src={iphone} />
+                                        <img src={iphone2} />
                                     </SwiperSlide>
                                     <SwiperSlide>
-                                        <img src={iphone} />
+                                        <img src={iphone3} />
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <img src={iphone4} />
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <img src={iphone5} />
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <img src={iphone6} />
                                     </SwiperSlide>
                                 </Swiper>
-                                <h1 className="Apple">
+                                <h2 className="Apple">
                                     Характеристики Apple iPhone 13 Pro Max 256
                                     ГБ серый
-                                </h1>
+                                </h2>
                                 <div className="characters">
                                     <h1 className="camera">
                                         Камера <span> 48p MPx</span>
@@ -159,7 +182,6 @@ const Product: React.FC = () => {
                                             <span>2021</span>
                                         </div>
                                         <hr />
-                                        <br />
                                         <h4>Экран</h4>
                                         <div className="type">
                                             <h5>Диагональ экрана (дюйм)</h5>
@@ -199,7 +221,6 @@ const Product: React.FC = () => {
                                             </span>
                                         </div>
                                         <hr />
-                                        <br />
                                         <h5>Заводские данные</h5>
                                         <div className="type">
                                             <h5>Тип</h5>
@@ -215,7 +236,7 @@ const Product: React.FC = () => {
                                             <h5>Год резила</h5>
                                             <span>2021</span>
                                         </div>
-                                        <br />
+
                                         <h4>Экран</h4>
                                         <div className="type">
                                             <h5>Диагональ экрана (дюйм)</h5>
@@ -335,9 +356,7 @@ const Product: React.FC = () => {
                                     Доставка бесплатная
                                 </h5>
                                 <div className="Css">
-                                    <div className="togolok">
-                                        <BsFillRecordCircleFill />
-                                    </div>
+                                    <input type="range" />
                                 </div>
 
                                 <div className="Sena">
@@ -529,11 +548,10 @@ const Product: React.FC = () => {
                             </div>
                         </div>
                     </div>
-                    {/* <div className="product-card">
-                        <Card />
-                    </div> */}
+
                     <br />
                     <h1 className="title">Отзывы</h1>
+                    <br />
                     <div className="test"></div>
                     <div className="Komend">
                         <div className="person">
@@ -806,10 +824,15 @@ const Product: React.FC = () => {
                             </h1>
                         </div>
                     </div>
-
+                    <br />
                     <div className="Btn">
-                        <button>Показать еще</button>
+                        <button onClick={dropDown}>
+                            {" "}
+                            {isOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
+                            Показать еще
+                        </button>
                     </div>
+                    <div className={isOpen ? "dd actived" : "dd"}></div>
                 </div>
             </div>
         </section>
