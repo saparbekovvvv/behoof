@@ -1,16 +1,12 @@
 import React from "react";
 import "./products.css";
 import img from "../../assets/iphone 13.png";
-import heart from "../../assets/Vector.png";
+import heart from "../../assets/vector.png";
 import icon from "../../assets/export.png";
 import chat from "../../assets/chart.png";
 import { Link } from "react-router-dom";
-<<<<<<< HEAD
-//dwdewe
-=======
 import { FaStar } from "react-icons/fa";
 
->>>>>>> fd8ecc2186cfe6a7e00264e35b27c35d187c3161
 const Products: React.FC = () => {
   return (
     <section id="Productss">

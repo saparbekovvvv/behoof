@@ -38,15 +38,7 @@ const Product: React.FC = () => {
     setIsOpen((prev) => !prev);
   };
   const [isOpen, setIsOpen] = useState(false);
-  // const [colorPallete, setColorPallete] = useState( {[
-  //     bg1: "fdfdfd",
-  //     bg2: "ffe0bb",
-  //     bg3: "ffbbbb",
-  //     bg4: "6c6c6c",
-  //     bg5: "bbffe2",
-  //     bg6: "bbc2ff",
-  //     bg7: "febbff",
-  // ]});
+
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const progress = [
     {
