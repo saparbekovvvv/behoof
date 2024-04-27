@@ -7,7 +7,7 @@ import diag from "../../assets/diag.svg";
 import crown from "../../assets/crown.svg";
 import chart from "../../assets/chart.svg";
 import heat from "../../assets/heart.svg";
-import vector from "../../assets/vector.png";
+import vector from "../../assets/Vector.png";
 import edopado from "../../assets/edado.png";
 import sitilin from "../../assets/ситилин.png";
 import chart1 from "../../assets/Chart.png";
