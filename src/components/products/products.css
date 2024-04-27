@@ -71,7 +71,7 @@
 
 .groupOfProducts_content_objects_object_info_buttons {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   gap: 10px;
 }
 
@@ -79,6 +79,37 @@
   border: none;
   background: transparent;
   padding: 0 10px;
+}
+.Type {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 60px;
+}
+.Star {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.text {
+  color: rgb(48, 209, 112);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  box-sizing: border-box;
+  border: 1px solid rgb(253, 253, 253);
+  border-radius: 12px;
+  background: rgb(246, 247, 250);
+  padding: 10px;
+}
+.textt {
+  color: rgb(126, 135, 148);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
 }
 
 .groupOfProducts_content_objects_object_info_advantage_info_block1 {
@@ -137,16 +168,23 @@
 .groupOfProducts_content_objects_object_info_advantage-price1 {
   display: none;
 }
+.phone_info_info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
 .phone_info_line {
-  width: 40px;
-  height: 2px;
-  background: grid;
+  width: 100%;
+  height: 3px;
+  border-radius: 10px;
+  background: #ff4d4d;
 }
 .phone_info_lines {
-  display: flex;
-  gap: 10px;
+  display: grid;
+  width: 100%;
+  gap: 2px;
   border-radius: 2px;
-  background: rgb(255, 77, 77);
+  grid-template-columns: repeat(5, 1fr);
 }
 @media screen and (max-width: 375px) {
   .groupOfProducts_content_objects_object {
@@ -211,5 +249,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+  }
+  .qwerty {
+    display: flex;
   }
 }

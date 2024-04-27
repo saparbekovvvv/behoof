@@ -1,35 +1,67 @@
 import React from "react";
 import "./auth.css";
+import { FcGoogle } from "react-icons/fc";
 const Auth: React.FC = () => {
     return (
         <div>
-            <main>
+            <main id=" Auth">
                 <div className="container">
                     <div className="register-form-container">
-                        <h1 className="form-title">Регистрация</h1>
-                        <div className="form-fields">
-                            <div className="form-field">
-                                <input type="text" placeholder="Имя" />
-                            </div>
-                            <div className="form-field">
-                                <input type="text" placeholder="Почта" />
-                            </div>
-                            <div className="form-field">
-                                <input type="text" placeholder="Пароль" />
-                            </div>
-                            <div className="form-field">
-                                <input
-                                    type="text"
-                                    placeholder="Подвердить пароль"
-                                />
-                            </div>
+                        <div className="from-hero">
+                            <h1 className="form-pretitle">Новый аккаунт</h1>
+                            <h5 className="from-title">
+                                Уже есть аккаунт? <span>Войти</span>
+                            </h5>
                         </div>
-                        <div className="form-buttons">
-                            <button className="button ">Регистрация</button>
-                            <div className="divider">или</div>
-                            <a href="#" className="button button-google">
-                                Google
-                            </a>
+                        <div className="from-first">
+                            <div className="form-fields">
+                                <div className="form-field">
+                                    <input type="text" placeholder="Эл.почта" />
+                                    <hr className="hr" />
+                                </div>
+                                <div className="form-field">
+                                    <input
+                                        type="text"
+                                        placeholder="Подвердите почту"
+                                    />
+                                    <hr className="hr" />
+                                </div>
+                                <div className="form-field">
+                                    <input
+                                        type="text"
+                                        placeholder="Придумайте пароль"
+                                    />
+                                    <hr className="hr" />
+                                </div>
+
+                                <div className="form-field">
+                                    <input
+                                        type="text"
+                                        placeholder="Подвердите пароль"
+                                    />
+                                    <hr className="hr" />
+                                </div>
+                                <div className="form-buttons">
+                                    <button className="button ">
+                                        Зарегистрироваться
+                                    </button>
+                                </div>
+                            </div>
+                            <div className="form-hr">
+                                <hr className="hr1" />
+                                <span>или</span>
+                                <hr className="hr1" />
+                            </div>
+                            <div className="form-google">
+                                <a href="#" className="google">
+                                    <div className="form-google-icon">
+                                        <FcGoogle />
+                                    </div>
+                                    <div className="form-google-text">
+                                        Продолжить в Google
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
