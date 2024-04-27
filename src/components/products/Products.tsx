@@ -5,6 +5,7 @@ import heart from "../../assets/Vector.png";
 import icon from "../../assets/export.png";
 import chat from "../../assets/chart.png";
 import { Link } from "react-router-dom";
+import { FaStar } from "react-icons/fa";
 
 const Products: React.FC = () => {
   return (
@@ -55,8 +56,22 @@ const Products: React.FC = () => {
                 <h1 className="groupOfProducts_content_objects_object_info_advantage-price1">
                   78 999 ₽
                 </h1>
-                <h1 className="text">4.4 Оценка экспертов </h1>
-                <h1>4.0</h1>
+                <div className="Type">
+                  <h1 className="text">4.4 Оценка экспертов </h1>
+                  <div className="Star">
+                    <h1 className="textt">
+                      4.0{" "}
+                      <span>
+                        <FaStar />
+                        <FaStar />
+                        <FaStar />
+                        <FaStar />
+                        <FaStar />
+                      </span>
+                      447 Отзывов
+                    </h1>
+                  </div>{" "}
+                </div>
                 <div>
                   <button className="groupOfProducts_content_objects_object_info_button">
                     <img src={heart} alt="" />
