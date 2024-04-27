@@ -103,6 +103,7 @@
   /* Further adjust position of canvas-img-two */
   .canvas-img-two {
     display: none;
+
     top: 50px;
     right: 60px;
   }
