@@ -1,6 +1,6 @@
-import "./hero.css";
-import phone from "../../assets/Дизайн без названия (4).png";
+import phones from "../../assets/Дизайн без названия (4).png";
 import { NavLink } from "react-router-dom";
+import "./hero.css";
 function Hero() {
     return (
         <section id="Hero">
@@ -20,7 +20,7 @@ function Hero() {
                             <span>Топ-10 </span> смартфонов 2023 года
                         </p>
                         <button>Смотреть</button>
-                        <img src={phone} alt="" />
+                        <img src={phones} alt="" />
                     </div>
                 </div>
             </div>

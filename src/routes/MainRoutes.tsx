@@ -1,10 +1,11 @@
 import { Route, Routes } from "react-router-dom";
 import Main from "./main/Main";
-import Product from "../components/product/Product";
 import Differences from "../components/differences/Differences";
+import Auth from "../../src/components/auth/Auth";
 import Favorite from "../favorite/favorite";
-import Auth from "../components/auth/Auth";
 import Products from "../components/products/Products";
+import Product from "../components/product/Product";
+import Res from "../components/res/res";
 
 const PUBLIC = [
     { path: "/", element: <Main />, key: 1 },
@@ -17,12 +18,14 @@ const PUBLIC = [
 
     { path: "/products", element: <Products />, key: 4 },
 ];
+
 const MainRoutes = () => {
     return (
         <Routes>
             {PUBLIC.map((el) => (
                 <Route path={el.path} element={el.element} key={el.key} />
             ))}
+            <Route path="*" element={<Res />} />
         </Routes>
     );
 };

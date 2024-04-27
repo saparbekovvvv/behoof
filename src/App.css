@@ -74,6 +74,10 @@ ul {
     padding: 10px;
     border-radius: 10px;
     background: #f2f5f9;
+    display: flex;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
 }
 a {
     text-decoration: none;
@@ -133,6 +137,8 @@ a {
     border-top-right-radius: 10px;
 }
 .dropdown-list :nth-child(2) {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }

@@ -1,9 +1,9 @@
 import React from "react";
 import "./products.css";
 import img from "../../assets/iphone 13.png";
-import heart from "../../assets/vector.png";
+import heart from "../../assets/Vector.png";
 import icon from "../../assets/export.png";
-import chat from "../../assets/chart.png";
+import chat from "../../assets/Chart.png";
 import { Link } from "react-router-dom";
 import { FaStar } from "react-icons/fa";
 
