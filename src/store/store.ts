@@ -1,4 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
+import { firebaseInit } from "../firebase/config";
+
+firebaseInit();
 
 const store = configureStore({
   reducer: {},

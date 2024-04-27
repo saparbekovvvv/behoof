@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { getDatabase, push, ref, set } from "firebase/database";
 import "./App.css";
 import Footer from "./components/footer/Footer";
@@ -17,7 +16,7 @@ function App() {
     auth.languageCode = "it";
 
     provider.setCustomParameters({
-      login_hint: "hamzasaparbekov4@gmail.com",
+      login_hint: "hamzasaparbekov123@gmail.com",
     });
 
     // createUserWithEmailAndPassword(
@@ -28,21 +27,23 @@ function App() {
     //   console.log("registered");
     // });
   };
+
   const addData = () => {
     const id = uuidv4();
     const product = {
       id,
-      name: "Iphone21",
-      category: "Phone",
+      name: "Iphone212",
+      category: "Phone212",
     };
     const db = getDatabase();
-    const dbRef = ref(db, "item/" + product.id);
+    const dbRef = ref(db, "itemsss/" + product.id);
 
     const newProductRef = push(dbRef);
     set(newProductRef, product).then(() => {
       console.log("success");
     });
   };
+
   return (
     <div>
       <Header />
@@ -53,21 +54,5 @@ function App() {
       <Footer />
     </div>
   );
-=======
-import "./App.css";
-import Header from "./components/header/Header";
-import Footer from "./components/footer/Footer";
-import MainRoutes from "./routes/MainRoutes";
-
-function App() {
-    return (
-        <div>
-            <Header />
-            <MainRoutes />
-            <Footer />
-        </div>
-    );
->>>>>>> develop
 }
-
 export default App;
