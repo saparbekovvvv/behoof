@@ -4,7 +4,6 @@ import { NavLink } from "react-router-dom";
 import { CiHeart } from "react-icons/ci";
 import { IoStatsChartOutline } from "react-icons/io5";
 import { BsPerson } from "react-icons/bs";
-import "./Header.css";
 
 const Header: React.FC = () => {
   const [isDropdown, setIsDropdown] = useState(false);
@@ -24,57 +23,41 @@ const Header: React.FC = () => {
           </div>
           <div className="catalog">
             <button onClick={dropDown}>Каталог товаров</button>
-            <div className="catolog-input">
-              <input type="text" placeholder="Поиск товаров" />
+            <div
+              className={isDropdown ? "dropdown-menu active" : "dropdown-menu"}
+            >
+              <div className="dropdown-content">
+                <h1>Каталог товаров</h1>
+                <div className="dropdown-list focus">
+                  <ul>
+                    <li>Смартфоны</li>
+                    <li>Ноутбуки</li>
+                    <li>Планшеты</li>
+                    <li>Умные часы</li>
+                    <li>Игровые приставки</li>
+                    <li>Наушники</li>
+                    <li>Портативные колонки</li>
+                    <li>Мониторы</li>
+                    <li>Принтеры и сканеры</li>
+                    <li>Планшеты и электронные книги</li>
+                    <li>Корпуса и блоки питания</li>
+                    <li>Аксесуары</li>
+                  </ul>
+                </div>
+              </div>
             </div>
+            <input type="text" placeholder="Поиск товаров" />
 
             <div className="nav">
-              <div className="nav-links">
-                <NavLink to="/favorite">
-                  <CiHeart />
-                </NavLink>
-                <NavLink to="/favorite">
-                  <IoStatsChartOutline />
-                </NavLink>
-                <NavLink to="/favorite">
-                  <BsPerson />
-                </NavLink>
-                <div
-                  className={
-                    isDropdown ? "dropdown-menu active" : "dropdown-menu"
-                  }
-                >
-                  <div className="dropdown-list focus">
-                    <ul>
-                      <li>Смартфоны</li>
-                      <li>Ноутбуки</li>
-                      <li>Планшеты</li>
-                      <li>Умные часы</li>
-                      <li>Игровые приставки</li>
-                      <li>Наушники</li>
-                      <li>Портативные колонки</li>
-                      <li>Мониторы</li>
-                      <li>Принтеры и сканеры</li>
-                      <li>Планшеты и электронные книги</li>
-                      <li>Корпуса и блоки питания</li>
-                      <li>Аксесуары</li>
-                    </ul>
-                  </div>
-                </div>
-                {/* <input type="text" placeholder="Поиск товаров" />
-
-                <div className="nav">
-                  <NavLink to="/favorite">
-                    <CiHeart />
-                  </NavLink>
-                  <NavLink to="/favorite">
-                    <IoStatsChartOutline />
-                  </NavLink>
-                  <NavLink to="/favorite">
-                    <BsPerson />
-                  </NavLink>
-                </div> */}
-              </div>
+              <NavLink to="/favorite">
+                <CiHeart />
+              </NavLink>
+              <NavLink to="/product">
+                <IoStatsChartOutline />
+              </NavLink>
+              <NavLink to="/favorite">
+                <BsPerson />
+              </NavLink>
             </div>
           </div>
         </div>

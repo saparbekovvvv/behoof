@@ -1,8 +1,9 @@
 import React from "react";
-import "../store/res.css";
 import { AiOutlineExclamation } from "react-icons/ai";
 import { AiOutlineClose } from "react-icons/ai";
 import { AiOutlineCheck } from "react-icons/ai";
+import "./res.css";
+import { NavLink } from "react-router-dom";
 
 const Res: React.FC = () => {
   return (
@@ -36,7 +37,9 @@ const Res: React.FC = () => {
             <p>
               Тут что то упало и это не страшно! <br /> Но мы все сохранили ;
             </p>
-            <button className="knopka">Перейти на главную</button>
+            <NavLink to="/">
+              <button className="knopka">Перейти на главную</button>
+            </NavLink>
           </div>
         </div>
       </div>

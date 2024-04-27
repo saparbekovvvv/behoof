@@ -1,6 +1,5 @@
 import React from "react";
 import Hero from "../../components/hero/Hero";
-import Res from "../../store/res";
 import BestChoice from "../../components/hero/bestChoice/BestChoice";
 import CardHero from "../../components/hero/cardHero/cardHero";
 import FuturePlans from "../../components/hero/futurePlans/futurePlans";
@@ -11,7 +10,6 @@ const Main: React.FC = () => {
   return (
     <>
       <Hero />
-      <Res />
       <BestChoice />
       <CardHero />
       <FuturePlans />
@@ -20,5 +18,4 @@ const Main: React.FC = () => {
     </>
   );
 };
-
 export default Main;

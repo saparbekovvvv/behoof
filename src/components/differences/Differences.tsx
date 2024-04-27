@@ -230,9 +230,7 @@ const Differences: React.FC = () => {
                   <h5>64 ГБ</h5>
                 </div>
 
-                <div className="model">
-                  <h2>Модель saparbekovvvv._, [25/4/24 12:15]</h2>
-                </div>
+                <div className="model"></div>
                 <div className="ProMax">
                   <h5>Apple iPhone 13 Pro Max</h5>
                   <h5>Apple iPhone 13 Pro</h5>
