@@ -12,7 +12,7 @@ import diag from "../../assets/diag.svg";
 import crown from "../../assets/crown.svg";
 import chart from "../../assets/chart.svg";
 import heat from "../../assets/heart.svg";
-import vector from "../../assets/Vector.png";
+import Vector from "../../assets/Vector 68.png";
 import edopado from "../../assets/edado.png";
 import sitilin from "../../assets/ситилин.png";
 import chart1 from "../../assets/chart.png";
@@ -37,9 +37,20 @@ import "swiper/css/thumbs";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Navigation, Thumbs } from "swiper/modules";
 import { NavLink } from "react-router-dom";
-import { BsFillRecordCircleFill } from "react-icons/bs";
 
 const Product: React.FC = () => {
+    const [selectedColor, setSelectedColor] = useState("blue");
+    const iphoneImg = {
+        white: iphone5,
+        blue: iphone,
+        green: iphone2,
+        red: iphone3,
+        midnight: iphone4,
+        pink: iphone6,
+    };
+    const handlerColor = (e) => {
+        setSelectedColor(e);
+    };
     const dropDown = () => {
         setIsOpen((prev) => !prev);
     };
@@ -84,26 +95,26 @@ const Product: React.FC = () => {
                                     spaceBetween={1}
                                     navigation={true}
                                     thumbs={{ swiper: thumbsSwiper }}
-                                    modules={[FreeMode, Navigation, Thumbs]}
                                     className="mySwiper2"
+                                    modules={[FreeMode, Navigation, Thumbs]}
                                 >
                                     <SwiperSlide>
-                                        <img src={iphone} />
+                                        <img
+                                            src={iphoneImg[selectedColor]}
+                                            alt={`iPhone ${selectedColor}`}
+                                        />
                                     </SwiperSlide>
                                     <SwiperSlide>
-                                        <img src={iphone2} />
+                                        <img
+                                            src={iphoneImg[selectedColor]}
+                                            alt={`iPhone ${selectedColor}`}
+                                        />
                                     </SwiperSlide>
                                     <SwiperSlide>
-                                        <img src={iphone3} />
-                                    </SwiperSlide>
-                                    <SwiperSlide>
-                                        <img src={iphone4} />
-                                    </SwiperSlide>
-                                    <SwiperSlide>
-                                        <img src={iphone5} />
-                                    </SwiperSlide>
-                                    <SwiperSlide>
-                                        <img src={iphone6} />
+                                        <img
+                                            src={iphoneImg[selectedColor]}
+                                            alt={`iPhone ${selectedColor}`}
+                                        />
                                     </SwiperSlide>
                                 </Swiper>
                                 <Swiper
@@ -116,19 +127,30 @@ const Product: React.FC = () => {
                                     className="mySwiper"
                                 >
                                     <SwiperSlide>
-                                        <img src={iphone} />
+                                        <img
+                                            src={iphoneImg[selectedColor]}
+                                            alt={`iPhone ${selectedColor}`}
+                                        />
                                     </SwiperSlide>
                                     <SwiperSlide>
-                                        <img src={iphone} />
-                                    </SwiperSlide>
+                                        <img
+                                            src={iphoneImg[selectedColor]}
+                                            alt={`iPhone ${selectedColor}`}
+                                        />
+                                    </SwiperSlide>{" "}
                                     <SwiperSlide>
-                                        <img src={iphone} />
+                                        <img
+                                            src={iphoneImg[selectedColor]}
+                                            alt={`iPhone ${selectedColor}`}
+                                        />
                                     </SwiperSlide>
                                 </Swiper>
                                 <h1 className="Apple">
-                                    Характеристики Apple iPhone 13 Pro Max 256
+                                    Характеристики Apple iPhone 13 Pro Max{" "}
+                                    {title}
                                     ГБ серый
                                 </h1>
+                                <br />
                                 <div className="characters">
                                     <h1 className="camera">
                                         Камера <span> 48p MPx</span>
@@ -323,7 +345,7 @@ const Product: React.FC = () => {
                                     </h4>
                                 </div>
 
-                                <div className="Type">
+                                <div className="tab">
                                     {progress.map((label, idx) => (
                                         <div key={idx} className="ddd">
                                             <h4 className="desing">
@@ -351,9 +373,7 @@ const Product: React.FC = () => {
                                     Доставка бесплатная
                                 </h5>
                                 <div className="Css">
-                                    <div className="togolok">
-                                        <BsFillRecordCircleFill />
-                                    </div>
+                                    <input type="range" />
                                 </div>
 
                                 <div className="Sena">
@@ -369,13 +389,54 @@ const Product: React.FC = () => {
                                 </div>
                                 <div className="Color">
                                     <h4>Цвет:</h4>
-                                    <div className="color"></div>
-                                    <div className="color2"></div>
-                                    <div className="color3"></div>
-                                    <div className="color4"></div>
-                                    <div className="color5"></div>
-                                    <div className="color6"></div>
-                                    <div className="color7"></div>
+                                    <div
+                                        className={`color ${
+                                            selectedColor === "white"
+                                                ? "active"
+                                                : ""
+                                        }`}
+                                        onClick={() => handlerColor("white")}
+                                    ></div>
+                                    <div
+                                        className={`color6 ${
+                                            selectedColor === "blue"
+                                                ? "active"
+                                                : ""
+                                        }`}
+                                        onClick={() => handlerColor("blue")}
+                                    ></div>
+                                    <div
+                                        className={`color5 ${
+                                            selectedColor === "green"
+                                                ? "active"
+                                                : ""
+                                        }`}
+                                        onClick={() => handlerColor("green")}
+                                    ></div>
+                                    <div
+                                        className={`color2 ${
+                                            selectedColor === "pink"
+                                                ? "active"
+                                                : ""
+                                        }`}
+                                        onClick={() => handlerColor("pink")}
+                                    ></div>
+                                    <div
+                                        className={`color3 ${
+                                            selectedColor === "red"
+                                                ? "active"
+                                                : ""
+                                        }`}
+                                        onClick={() => handlerColor("red")}
+                                    ></div>
+                                    <div
+                                        className={`color4 ${
+                                            selectedColor === "midnight"
+                                                ? "active"
+                                                : ""
+                                        }`}
+                                        onClick={() => handlerColor("midnight")}
+                                    ></div>
                                 </div>
                                 <div className="Pamyat">
                                     <h4>Память:</h4>
@@ -399,7 +460,7 @@ const Product: React.FC = () => {
                             </div>
                             <div className="Grafic">
                                 <h5>История цены</h5>
-                                <img src={vector} alt="" />
+                                <img src={Vector} alt="" />
                                 <div className="Month">
                                     <h5>Сентябрь</h5>
                                     <h5>Октябрь</h5>
