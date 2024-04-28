@@ -13,6 +13,25 @@
   align-items: center;
   justify-content: space-between;
 }
+.phone_info_info span {
+  color: rgb(126, 135, 148);
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-align: left;
+  font-size: 20px;
+}
+.Star span {
+  font-size: 15px;
+  box-sizing: border-box;
+
+  border: 1px solid rgb(253, 253, 253);
+  border-radius: 12px;
+
+  background: rgb(246, 247, 250);
+}
 
 .smart {
   color: rgb(38, 49, 65);
@@ -33,7 +52,25 @@
   letter-spacing: 0%;
   text-align: left;
 }
-
+.ccc {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.groupOfProducts_content_objects_object_info_button button {
+  width: 20px;
+  border-radius: 50%;
+  background: transparent;
+}
+.spam {
+  color: rgb(48, 209, 112);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+}
 .groupOfProducts_content_objects_object_info_advantage_title {
   display: flex;
   flex-direction: row;
@@ -75,11 +112,6 @@
   gap: 10px;
 }
 
-.groupOfProducts_content_objects_object_info_button {
-  border: none;
-  background: transparent;
-  padding: 0 10px;
-}
 .Type {
   display: flex;
   align-items: center;
@@ -104,12 +136,8 @@
 }
 .textt {
   color: rgb(126, 135, 148);
-  font-family: Inter;
   font-size: 16px;
   font-weight: 500;
-  line-height: 20px;
-  letter-spacing: 0%;
-  text-align: left;
 }
 
 .groupOfProducts_content_objects_object_info_advantage_info_block1 {
@@ -133,10 +161,6 @@
 }
 .groupOfProducts_content_objects_object_info_buttons1 {
   display: none;
-}
-
-.groupOfProducts_content_objects_object_info_button {
-  cursor: pointer;
 }
 
 .groupOfProducts_content_objects_object_characteristics_button {
@@ -185,6 +209,136 @@
   gap: 2px;
   border-radius: 2px;
   grid-template-columns: repeat(5, 1fr);
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.section-title {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: rgb(15, 17, 19);
+  font-weight: 600;
+  line-height: 32px;
+}
+.depozit-title {
+  color: rgb(38, 49, 65);
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.price-input {
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid rgb(253, 253, 253);
+  border-radius: 12px;
+  background: rgb(246, 247, 250);
+  padding: 10px;
+}
+.sena {
+  color: rgb(38, 49, 65);
+  font-size: 20px;
+  line-height: 28px;
+}
+.price-input input[type="number"] {
+  width: 100px;
+  margin-right: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.section {
+  padding: 20px;
+  border: 1px solid rgb(242, 245, 249);
+  border-radius: 12px;
+}
+.price-range {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.flex-sect {
+  display: flex;
+  gap: 50px;
+}
+.check {
+  display: flex;
+  gap: 120px;
+}
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.bater-title {
+  color: rgb(38, 49, 65);
+  font-size: 20px;
+  line-height: 28px;
+}
+.kamer-title {
+  color: rgb(38, 49, 65);
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.qqq {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.battery-content {
+  display: flex;
+  color: rgb(15, 17, 19);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.price-range input[type="radio"] {
+  margin-right: 5px;
+}
+
+.camera-content {
+  display: flex;
+}
+.checkbox-group input[type="checkbox"] + label {
+  margin-left: 20px;
+}
+
+.checkbox-group input[type="checkbox"]:checked + label {
+  font-weight: bold;
+  color: #0066ff;
+}
+.sortir-title {
+  width: 167px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid rgb(253, 253, 253);
+  border-radius: 12px;
+  background: rgb(246, 247, 250);
+  padding: 10px;
+  display: none;
+}
+.spans-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgb(255, 77, 77);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.bate-title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 @media screen and (max-width: 375px) {
   .groupOfProducts_content_objects_object {
@@ -252,5 +406,14 @@
   }
   .qwerty {
     display: flex;
+  }
+  .title {
+    display: none;
+  }
+  .section {
+    display: none;
+  }
+  .sortir-title {
+    display: block;
   }
 }

@@ -10,12 +10,11 @@ import { FaStar } from "react-icons/fa6";
 import re from "../../assets/20.jpg";
 import diag from "../../assets/diag.svg";
 import crown from "../../assets/crown.svg";
-import chart from "../../assets/chart.svg";
+import chart from "../../assets/chartt.png";
 import heat from "../../assets/heart.svg";
-import vector from "../../assets/Vector.png";
 import edopado from "../../assets/edado.png";
 import sitilin from "../../assets/ситилин.png";
-import chart1 from "../../assets/Chart.png";
+import chart1 from "../../assets/chart.svg";
 import chart2 from "../../assets/chart2.png";
 import arrow from "../../assets/Arrow - Right 2.svg";
 import person from "../../assets/person.png";
@@ -365,7 +364,6 @@ const Product: React.FC = () => {
               </div>
               <div className="Grafic">
                 <h5>История цены</h5>
-                <img src={vector} alt="" />
                 <div className="Month">
                   <h5>Сентябрь</h5>
                   <h5>Октябрь</h5>
