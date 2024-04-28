@@ -87,12 +87,12 @@ const NewArrivals: React.FC = () => {
         <h1>Новинки</h1>
         <div className="newArrivals">
           {Arrivals.map((item) => (
-            <div key={item.id} className="new-content">
-              <img src={item.img} alt="" />
+            <article key={item.id} className="new-content">
+              <img src={item.img} alt={item.pretitle} />
               <p>{item.pretitle}</p>
-              <h1>{item.title}</h1>
+              <h2>{item.title}</h2>
               <h3>{item.price}</h3>
-            </div>
+            </article>
           ))}
         </div>
       </div>

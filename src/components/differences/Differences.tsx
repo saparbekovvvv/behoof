@@ -14,7 +14,7 @@ import { MdOutlineStarHalf } from "react-icons/md";
 const Differences: React.FC = () => {
     return (
         <section id="Differences">
-            <div className="hero">
+            <div className="herO">
                 <div className="container">
                     <div className="difren__">
                         <div className="differences">
