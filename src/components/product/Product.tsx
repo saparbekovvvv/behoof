@@ -146,9 +146,8 @@ const Product: React.FC = () => {
                                     </SwiperSlide>
                                 </Swiper>
                                 <h1 className="Apple">
-                                    Характеристики Apple iPhone 13 Pro Max{" "}
-                                    {title}
-                                    ГБ серый
+                                    Характеристики Apple iPhone 13 Pro Max ГБ
+                                    серый
                                 </h1>
                                 <br />
                                 <div className="characters">
